@@ -1,0 +1,12 @@
+[
+   {
+      "model": "interviewprep.question",
+      "pk": 2,
+      "fields": {
+         "title": "Motivation2",
+         "question": "What motivates you to work? What are you passionate about?",
+         "lesson":1,
+         "answer":"I am always curious about new technologies and excited about applying them to create new products. Working with full dedication towards a goal, making progress every day, and the desire to meet the target and the deadline always keep me motivated."
+      }
+   }
+]

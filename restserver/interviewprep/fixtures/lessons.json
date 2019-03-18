@@ -1,0 +1,20 @@
+[
+   {
+      "model": "interviewprep.lesson",
+      "pk": 1,
+      "fields": {
+         "title": "Artificial Intelligence",
+         "description": "blah blah",
+         "courses":[1]
+      }
+   },
+   {
+      "model": "interviewprep.lesson",
+      "pk": 2,
+      "fields": {
+         "title": "Databases",
+         "description": "blah blah",
+         "courses":[1]
+      }
+   }
+]

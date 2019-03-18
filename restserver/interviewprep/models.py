@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.dispatch import receiver
-from django.db.models.signals import post_save
+from django.db.models.signals import post_save, pre_save
 
 # Create your models here.
 class InterviewProfile(models.Model):
@@ -22,13 +22,22 @@ def create_user_interview_profile(sender, instance, created, **kwargs):
 def save_user_interview_profile(sender, instance, **kwargs):
     instance.profile.save()
 
+class CourseCategory(models.Model):
+   title = models.CharField(max_length=50)
+   def __str__(self):
+        return self.title
+
+   class Meta:
+        ordering = ('title',)
+
 
 class Course(models.Model):
    title = models.CharField(max_length=50)
    description = models.CharField(max_length=1000)
-   users = models.ManyToManyField(User)
+   users = models.ManyToManyField(User, blank=True)
    canpeek = models.BooleanField(default=True)
    cost = models.FloatField(default=0)
+   category =  models.ForeignKey(CourseCategory, on_delete=models.DO_NOTHING, blank=True)
 
    def __str__(self):
         return self.title
@@ -40,7 +49,7 @@ class Course(models.Model):
 class Lesson(models.Model):
    title = models.CharField(max_length=50)
    description = models.CharField(max_length=1000)
-   course = models.ForeignKey(Course, on_delete=models.CASCADE)
+   courses = models.ManyToManyField(Course, blank=True)
    paid = models.BooleanField(default=False)
 
    def __str__(self):
@@ -53,6 +62,7 @@ class Lesson(models.Model):
 class Question(models.Model):
    title = models.CharField(max_length=50)
    question = models.CharField(max_length=500)
+   speechtext = models.CharField(max_length=500)
    visemes = models.CharField(max_length=500)
    answer = models.CharField(max_length=1000)
    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
@@ -61,11 +71,23 @@ class Question(models.Model):
    def __str__(self):
         return self.title
 
+
    class Meta:
         ordering = ('title',)
+
+def QuestionHandler(sender, instance, **kwargs):
+   instance.speechtext=instance.question
+   instance.visemes = "[1, 2, 3]"
+    
+
+pre_save.connect(QuestionHandler, sender=Question)
 
 class Attempt(models.Model):
    question = models.ForeignKey(Question, on_delete=models.CASCADE)
    user = models.ForeignKey(User, on_delete=models.CASCADE)
    score = models.FloatField(default=0)
    answer = models.CharField(max_length=2000)
+   timestamp = models.DateTimeField(auto_now_add=True, blank=True)
+
+   def __str__(self):
+        return "user(" + self.user.id + ") question(" + self.question.id + ")"

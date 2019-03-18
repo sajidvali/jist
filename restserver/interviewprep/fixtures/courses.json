@@ -1,0 +1,11 @@
+[
+   {
+      "model": "interviewprep.course",
+      "pk": 2,
+      "fields": {
+         "title": "Mechanical Engineering",
+         "description": "This course trains you to handle interview questions gracefully in all major aspects of...",
+         "category":2
+      }
+   }
+]

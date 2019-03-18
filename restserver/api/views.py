@@ -1,60 +1,81 @@
 from django.shortcuts import render
 import json
-from .serializers import CollegeSerializer
-from google.oauth2 import id_token
-from google.auth.transport import Request
+from .serializers import CollegeSerializer, ProfileSerializer, StudyFieldSerializer
+
 from rest_framework import generics
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from django.core.exceptions import ObjectDoesNotExist
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.views import exception_handler
+from rest_framework.permissions import IsAuthenticated, AllowAny
 
 #model imports
 from django.contrib.auth.models import User
-from .models import College
+from .models import College, Profile, StudyField
 
 class ListCollegeView(generics.ListAPIView):
     """
     Provides a get method handler.
     """
+    permission_classes = (IsAuthenticated,)
     queryset = College.objects.all()
     serializer_class = CollegeSerializer
 
-def googleauth(token):
-    try:
-        # Specify the CLIENT_ID of the app that accesses the backend:
-        idinfo = id_token.verify_oauth2_token(token, Request(), '3440031025-0ibqq9u77l693gj0ahrf815a86kt5cts.apps.googleusercontent.com')
+class ListStudyFieldView(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)
+    queryset = StudyField.objects.all()
+    serializer_class = StudyFieldSerializer
 
-        # Or, if multiple clients access the backend server:
-        # idinfo = id_token.verify_oauth2_token(token, requests.Request())
-        # if idinfo['aud'] not in [CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]:
-        #     raise ValueError('Could not verify audience.')
+# class ProfileView(APIView):
+#     permission_classes = (IsAuthenticated,)
+#     def get(self, request):
+#         queryset = Profile.objects.get(pk=request.user.id)
+#         return Response(ProfileSerializer(queryset).data)
+#     def post(self, request):
+#         try:
+#             profile = Profile.objects.get(pk=request.user.id)
+#             profile.savedata(request.data)
+#             return Response(data, status=201)
+#         except:
+#             return Response(data, status=400)      
 
-        if idinfo['iss'] not in ['accounts.google.com', 'https://accounts.google.com']:
-            raise ValueError('Wrong issuer.')
+# class HasProfileView(APIView):
+#     permission_classes = (IsAuthenticated,)
+#     def post(self, request):
+#         received_json_data=json.loads(request.body)
+    
+#         try:
+#             user = User.objects.get(username=received_json_data["username"])
+#             return Response({'status':user.profile.college!=None})
+#         except ObjectDoesNotExist:
+#             return Response({'status':False})       
 
-        # If auth request is from a G Suite domain:
-        # if idinfo['hd'] != GSUITE_DOMAIN_NAME:
-        #     raise ValueError('Wrong hosted domain.')
+class JWTAuthentication(APIView):
+    permission_classes = (AllowAny,)
+    def get_tokens_for_user(self, user):
+        refresh = RefreshToken.for_user(user)
 
-        # ID token is valid. Get the user's Google Account ID from the decoded token.
-        userid = idinfo['sub']
-        # "email": "testuser@gmail.com",
-        # "email_verified": "true",
-        # "name" : "Test User",
-        # "picture": "https://lh4.googleusercontent.com/-kYgzyAWpZzJ/ABCDEFGHI/AAAJKLMNOP/tIXL9Ir44LE/s99-c/photo.jpg",
-        # "given_name": "Test",
-        # "family_name": "User",
-        # "locale": "en"
-        #user, created = User.objects.get_or_create(username=idinfo['email'], email=idinfo['email'], first_name=idinfo['given_name'], last_name=idinfo['family_name'])
-        #if created:
+        return {
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        }
 
-    except ValueError:
-        # Invalid token
-        pass
-
-# Create your views here.
-def authenticate(request):
-    if request.method == 'POST':
-        received_json_data=json.loads(request.body)
-        if received_json_data.provider=='google':
-            googleauth(received_json_data.idtoken)
+    def post(self, request):
+        if request.user == None:
+            return Response({"error":"Unauthorized"}, 403)
         else:
-            pass 
+            return Response(self.get_tokens_for_user(request.user))
+        # received_json_data=json.loads(request.body)
+        # print(received_json_data)
+        # if received_json_data.provider=='google':
+        #     user = self.googleauth(received_json_data.idtoken)
+        #     if(user!=None):
+        #         return Response(self.get_tokens_for_user(user))
+        #     else:
+        #         return Response({"error":"Authentication Service not available"}, 503)
+        # else:
+        #     return Response({"error":"Authentication Service noo Supported"}, 401)
             # unsupported
+
+    

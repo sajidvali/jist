@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.userimage {
+    height:40px;
+    border-radius: 20px;
+}
+
+.username {
+    margin-left:10px;
+}
+
+.title {
+    font-size: 2em;
+}

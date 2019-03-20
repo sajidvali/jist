@@ -1,0 +1,162 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 141,
+		"fields": {
+			"title": "AI",
+			"question": "What is artificial intelligence?",
+			"lesson": "10",
+			"answer": "Artificial intelligence, in a broad sense, is the study of how to teach a computer to do things which at present humans can do better. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 142,
+		"fields": {
+			"title": "ML",
+			"question": "What is machine learning?",
+			"lesson": "10",
+			"answer": "Machine learning is a way of achieving artificial intelligence where a machine can learn from experience or data with respect to some defined task. In this context, learning means its performance at the given task improves with experiences."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 143,
+		"fields": {
+			"title": "ML application",
+			"question": "Can you give us some examples of practical applications of machine learning?",
+			"lesson": "10",
+			"answer": "Some examples of machine learning are optical character recognition, handwriting recognition, spam filter, product suggestions to buyers based on search, facial recognition, medicinal drug discovery, disease diagnostics, genome studies, stock trading, voice recognition, speech-to-text, virtual assistants, customer service chatbots, robots, autonomous driving, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 144,
+		"fields": {
+			"title": "Rule Based AI",
+			"question": "What is a rule-based system? Can you give an example?",
+			"lesson": "10",
+			"answer": "A rule-based system is a type of Artificial intelligence system where a set of rules are programmed by humans or are automatically inferred. A typical example of a rule-based system would be a domain-specific expert system, such as a preliminary disease diagnostic system which uses a knowledge base as well as an inference engine."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 145,
+		"fields": {
+			"title": "ANN",
+			"question": "What is an artificial neural network (or A N N) ?",
+			"lesson": "10",
+			"answer": "An artificial neural network is a computer model based on the structure and functions of biological neural networks to learn and perform certain tasks. The structure of the artificial neural network changes based on the input and output."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 146,
+		"fields": {
+			"title": "CNN",
+			"question": "What is a convolutional neural network (or C N N) and where is it used?",
+			"lesson": "10",
+			"answer": "A convolutional neural network is a special type of artificial neural network that uses perceptrons, a machine learning unit algorithm, for supervised learning, to analyze data. In CNN, the nodes of a layer are connected to multiple nodes of the previous layer and the next layer. CNNs are used in image recognition, natural language processing and several other cognitive tasks."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 147,
+		"fields": {
+			"title": "DNN",
+			"question": "What is a deep neural network (or D N N) ?",
+			"lesson": "10",
+			"answer": "A deep neural network usually has many hidden layers besides the input and output layers."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 148,
+		"fields": {
+			"title": "nan",
+			"question": "What is Deep learning? Who coined the term deep learning? Can you give an example of where deep learning is used?",
+			"lesson": "10",
+			"answer": "Deep learning is machine learning using a deep neural network. In 2006, Geoffrey Hinton et al published a paper on training deep neural networks to recognize hand-written digits with greater than 98% accuracy, and they coined the term deep learning. Deep learning has many applications such as web search ranking, speech recognition, face recognition, autonomous vehicle, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 149,
+		"fields": {
+			"title": "Data Science",
+			"question": "What is the difference between Machine learning and data science? Please explain with examples.",
+			"lesson": "10",
+			"answer": "Data science is a broad field which may include Machine learning, statistics as well as human experts. For example, regression, naïve Bayes and supervised clustering techniques use data to learn. Whereas, in unsupervised clustering, the final labeling of the found clusters and the interpretation is often done by human data science experts who also have domain knowledge. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 150,
+		"fields": {
+			"title": "Software tools",
+			"question": "Can you give some examples of a few machine learning and data science software tools?",
+			"lesson": "10",
+			"answer": "Tensor Flow, Microsoft cognitive toolkit, Theano, Keras, Deep learning 4 j, Deep Learn Toolbox, Neural designer, Apache SINGA, MX Net, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 151,
+		"fields": {
+			"title": "Supervised Learning",
+			"question": "What are supervised learning, unsupervised learning, and semi-supervised learning? ",
+			"lesson": "10",
+			"answer": "In supervised learning, the training data are labeled, that is, the desired solutions for each instance are supplied to the algorithm. In unsupervised learning, the training data is unlabeled and the system learns without a teacher. In semi-supervised learning, only some data are labeled. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 152,
+		"fields": {
+			"title": "Supervised examples",
+			"question": "Give us some examples of supervised learning algorithms and a few real-world examples of their application.",
+			"lesson": "10",
+			"answer": "Some important supervised learning algorithms are k-nearest neighbors, Linear regression, Logistic regression, Support Vector Machines (S V M), Decision Trees and Random Forests, ensemble methods, etc. A few common practical applications of supervised learning are targeted online advertisement, language translation, speech recognition, autonomous driving, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 153,
+		"fields": {
+			"title": "Unsupervised",
+			"question": "Can you give some examples of unsupervised learning algorithms and where one can use unsupervised learning?",
+			"lesson": "10",
+			"answer": "Some of the unsupervised learning algorithms are for Clustering: k-means, Hierarchical Cluster Analysis, expectation maximization. For Visualization and dimensionality reduction: Principal Component Analysis, Kernel P C A, Locally-Linear Embedding, t-distributed Stochastic Neighbor Embedding (t S N E). For Association rule learning: Apriori, Eclat. etc. We can use unsupervised learning in Data visualization, dimensionality reduction, feature extraction, anomaly detection, and so on."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 154,
+		"fields": {
+			"title": "Association rule",
+			"question": "What is association rule learning? Can you give an example where it can be used?",
+			"lesson": "10",
+			"answer": "Association rule learning is to find interesting relationships between the attributes from a large amount of data. This can be used, for example, in analyzing the online buyers' shopping habits, finding out that many of those who buy book X also buy book Y, and then suggest such books to the potential customers."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 155,
+		"fields": {
+			"title": "Reinforcement",
+			"question": "What do you know about Reinforcement learning? ",
+			"lesson": "10",
+			"answer": "Reinforcement learning is where the learning system (or the agent) can observe the environment, select and perform actions, and get rewards or penalties in return. And thus learns the best policy to get most rewards. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 156,
+		"fields": {
+			"title": "Spam Filter",
+			"question": "Can you explain to me how a spam filter using Machine learning works?",
+			"lesson": "10",
+			"answer": "(Find out from the internet or books how the modern spam filters work. Write a short explanation and explain to someone by writing on a whiteboard or sheet of paper. Make it simple enough to understand but do use proper technical terms such as reinforcement learning, etc.)"
+		}
+	}
+]

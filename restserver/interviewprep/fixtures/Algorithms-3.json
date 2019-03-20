@@ -1,0 +1,172 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 78,
+		"fields": {
+			"title": "Dijkstra Algorithm",
+			"question": "What is Dijkstra's algorithm and what is its purpose? Give a few practical examples.",
+			"lesson": "6",
+			"answer": "The purpose of Dijkstra's algorithm is to find the shortest paths between the nodes in a weighted directed graph. Given a source node, Dijkstra's algorithm can find the shortest path to all other nodes producing a shortest-path tree. It is used in network routing protocols, finding the shortest route between one city and all other cities, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 79,
+		"fields": {
+			"title": "Problem solving",
+			"question": "So suppose, several companies representatives from various cities are to come for a meeting to be held in one of those cities. They all travel by cars. How would you choose a city for the meeting so that the total distance traveled by all the participants is minimum?",
+			"lesson": "6",
+			"answer": "We can reverse the problem as minimum distance traveled from a city to reach each of the other cities. We can choose one city as the source node and find the shortest paths to all other cities to generate a total distance traveled. Then we can repeat that process for each city as the source node. Finally, we have to select the city that gives the minimum of all these shortest total paths to be traveled. In fact, with some modifications to the algorithm, we can find the best car-pooling suggestions to reduce the fuel cost."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 80,
+		"fields": {
+			"title": "Encryption",
+			"question": "Can you name a few encryption algorithms?",
+			"lesson": "6",
+			"answer": "Some commonly used encryption algorithms are RSA,  Triple DES, Advanced Encryption Standard or AES, Secured Hash Algorithm SHA 3, Blowfish, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 81,
+		"fields": {
+			"title": "RSA algorithm",
+			"question": "What can you tell us about the RSA algorithm?",
+			"lesson": "6",
+			"answer": "RSA algorithm is an asymmetric cryptographic algorithm used by many computers to encrypt and decrypt messages. It uses a public key for encryption and a private key for decryption. It is essentially based on the idea that finding the factors of a large composite number is difficult. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 82,
+		"fields": {
+			"title": "Genetic algorithm",
+			"question": "What is a genetic algorithm and what kind of problems can be solved with it?",
+			"lesson": "6",
+			"answer": "A genetic algorithm is an evolutionary algorithm inspired by the process of natural selection of Darwin's theory of evolution. It is used in global optimization and search problems such as automated design, Computational neuroscience, image processing, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 83,
+		"fields": {
+			"title": "Matrix multiplication",
+			"question": "Suppose you are working on the development of a computer graphics or image processing software and you need to multiply two matrices. What algorithm will you use and why?",
+			"lesson": "6",
+			"answer": "There are several algorithms for multiplying matrices. If we directly multiply following the definition of matrix multiplication as we do in hand calculations, that will take time of the order of n to the power 3 for two n by n matrices. So, for large matrices, we can use a more efficient algorithm, for example, Strassen algorithm whose time complexity is n to the power 2.8 or Coppersmith-Winograd algorithm whose time complexity is of the order of n to the power 2.375"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 84,
+		"fields": {
+			"title": "Dynamic programming",
+			"question": "What is Dynamic programming?",
+			"lesson": "6",
+			"answer": "Rewrite: Dynamic Programming is a method for solving a complex problem by breaking it down into a collection of simpler overlapping sub-problems, solving each of those sub-problems in a recursive manner, and storing their solutions using a memory-based data structure."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 85,
+		"fields": {
+			"title": "Bellman optimality",
+			"question": "What is Bellman's Principle of optimality?",
+			"lesson": "6",
+			"answer": "Bellman's Principle of Optimality states that an optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 86,
+		"fields": {
+			"title": "Decision problem",
+			"question": "What is a decision problem in Computability theory? ",
+			"lesson": "6",
+			"answer": "In computability theory and computational complexity theory, a decision problem is a problem that can be posed as a yes or no question of the input values to arrive at a solution or decision. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 87,
+		"fields": {
+			"title": "Decision Example",
+			"question": "Can you give an example of a decision problem that can be used in industry?",
+			"lesson": "6",
+			"answer": "A practical application can be to screen candidates for a job based on a set of criteria."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 88,
+		"fields": {
+			"title": "Turing Machine",
+			"question": "What is a Turing Machine? What is it used for? ",
+			"lesson": "6",
+			"answer": "A Turing machine is a mathematical model of computation that defines an abstract machine which manipulates symbols on a strip of tape according to a table of rules."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 89,
+		"fields": {
+			"title": "Turing complete",
+			"question": "What is the meaning of Turing complete?",
+			"lesson": "6",
+			"answer": "Turing completeness is the ability for a system of instructions to simulate a Turing machine. A programming language that is Turing complete is theoretically capable of expressing all tasks accomplishable by computers; nearly all programming languages are Turing complete if the limitations of finite memory are ignored. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 90,
+		"fields": {
+			"title": "Data compression",
+			"question": "Do you know of anything about the types of data-compression commonly used?",
+			"lesson": "6",
+			"answer": "Lossless data compression is used in ZIP file format. Image compressions such as PNG and GIF use lossless compression.  Whereas, lossy compression,  are used in MP3 Audio files."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 91,
+		"fields": {
+			"title": "Quick Sort",
+			"question": "Explain Quick sort algorithm",
+			"lesson": "6",
+			"answer": "Try answering it yourself. Look up your textbook or the internet for the answer, write your answer on a sheet of paper. Explain it to a fellow student and get his or her feedback. Then improve on your explanation and the way of speaking. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 92,
+		"fields": {
+			"title": "Master theorem",
+			"question": "What's the use of the Master theorem in the analysis of algorithms?",
+			"lesson": "6",
+			"answer": "The master theorem helps perform an asymptotic analysis for recurrence relations which occur in the analysis of many divide-and-conquer algorithms. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 93,
+		"fields": {
+			"title": "MT details",
+			"question": "Can you explain the details of the master theorem? Feel free to use the white-board.",
+			"lesson": "6",
+			"answer": "If the runtime of an algorithm can be expressed in the form T(n) = a T(n/b) + f(n) where a>= 1, b>1,  n is the size of the problem, a is the number of subproblems in the recursion, n/b is the size of each subproblem, f(n) is the cost of the work done outside the recursive calls, that is the cost of dividing and merging. Then the master theorem gives the asymptotic estimate of time in 3 different cases.   Case 1. When the running time is dominated by the cost at the leaves  If f(n) = O (n^logb(a) - epsilon) , then T(n) = Theta (n^logb(a) for epsilon >0        Case 2. When running time is evenly distributed throughout the tree.  If f(n) = Theta (n^ logb(a)), then  T(n) = Theta (n^ logb(a) times log(n))      Case 3. When the running time is dominated by the cost at the root. If f(n) = Omega (n^Logb(a) + epsilon) then T(n) = Theta(f(n)) for epsilon > 0. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 94,
+		"fields": {
+			"title": "O notation",
+			"question": "What are theta notation, big O notation, and Ω omega notation?",
+			"lesson": "6",
+			"answer": "In Asymptotic analysis of algorithms, The theta notation bounds a function from above and below, the Big O notation defines an upper bound of an algorithm, and  Ω(omega) notation provides an asymptotic lower bound. "
+		}
+	}
+]

@@ -1,0 +1,172 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 18,
+		"fields": {
+			"title": "Hash Table",
+			"question": "How does a hash table or hash map work?",
+			"lesson": "2",
+			"answer": "In a hash map or hash table, the keys are converted into unique numeric indexes using some mathematical hash function and stored in an array. Using which one can quickly access the desired values."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 19,
+		"fields": {
+			"title": "Application of HT",
+			"question": "What is the advantage of a hash table and where is it used? Can you give some examples?",
+			"lesson": "2",
+			"answer": "Hash maps are used in many practical applications because of its efficiency in three main things: searching data, inserting data, and deleting data. Hash maps are commonly used in building other complex systems or data structures, for example, database indexing, sets, caches, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 20,
+		"fields": {
+			"title": "Lookup time",
+			"question": "What is the lookup time in a map? What is the lookup time when a map is implemented as a hash map?",
+			"lesson": "2",
+			"answer": "In a hash map, a lookup can be done in constant time. Whereas, a lookup in a map, if implemented using a B-tree, can be done in log (N)"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 21,
+		"fields": {
+			"title": "Binary tree",
+			"question": "What is the difference between a binary tree and a binary search tree?",
+			"lesson": "2",
+			"answer": "A Binary tree is a tree data structures where a node may have at most two child nodes. In a Binary Search Tree, the nodes (or keys) are kept in sorted order such that smaller value is on the left and larger value is on the right of a node. Therefore, a search operation is fast. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 22,
+		"fields": {
+			"title": "Self-balancing ",
+			"question": "What is a self-balancing binary search tree?",
+			"lesson": "2",
+			"answer": "A self-balancing binary search tree is one that automatically keeps the height of the tree small, which makes searching even faster because the searching time is proportional to the height of the tree."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 23,
+		"fields": {
+			"title": "Tries",
+			"question": "What is a Trie data structure?",
+			"lesson": "2",
+			"answer": "A Trie is an ordered tree data structure used to store a dynamic set or associative array where the keys are usually characters or strings. The node position in the trie defines the key with which it is associated. All the descendants of a node have a common prefix of the string associated with that node, and the root is associated with the empty string. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 24,
+		"fields": {
+			"title": "Application Tries",
+			"question": "Where are tries used?",
+			"lesson": "2",
+			"answer": "Tries can be used as a replacement for other data structures such as binary search trees, hash tables etc.. Tries can be used for storing dictionaries or predictive texts. Tries are also used burst-sort and Radix sort algorithms."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 25,
+		"fields": {
+			"title": "Graph DS",
+			"question": "Describe a graph data structure?",
+			"lesson": "2",
+			"answer": "A graph is a non-linear abstract data type that comprises a finite set of nodes and edges connecting pairs of nodes. Each node has a key or value. For directed graphs where the nodes are ordered pairs, arrows are used."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 26,
+		"fields": {
+			"title": "Directed graph",
+			"question": "Can you give a practical example of where a directed graph can be used?",
+			"lesson": "2",
+			"answer": "A directed graph can be used to represent the various locations of a downtown (or city central area) and the one-way streets connecting them."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 27,
+		"fields": {
+			"title": "Heap DS",
+			"question": "What is a heap data structure, can you explain? Also, can you name a few types of Heaps?",
+			"lesson": "2",
+			"answer": "A heap is a specialized tree-based data structure which is almost complete and the key of a parent node and the key of the child node follow a heap property relationship. That is, for a max heap, the parent node key is greater than or equal to the keys of the child-nodes, and for a min heap, the parent node key is less than or equal to that of the child node. There are various types of heaps, for example, a Binomial heap, Fibonacci heap, k-ary heap, Leftist heap, Radix heap, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 28,
+		"fields": {
+			"title": "Heap maintenance",
+			"question": "How do you maintain that heap data structure or heap property, can you explain? ",
+			"lesson": "2",
+			"answer": "Heap property is maintained using heap sort. Basically, heapsort divides the input into a sorted and an unsorted region, and iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. Floyd's algorithm is commonly used for heap sorting."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 29,
+		"fields": {
+			"title": "Floyd Warshall algorithm",
+			"question": "Can you explain the basid idea behind the Floyd Warshall algorithm in a few words?",
+			"lesson": "2",
+			"answer": "The Floyd Warshall Algorithm is used to solve the All Pairs Shortest Path problem in a weighted graph. The basic idea is to compare all possible paths through the graph between ech pair of vertices and incrementally improving an estimate on the shortest path between two vertices till the optimum is reached."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 30,
+		"fields": {
+			"title": "Stack",
+			"question": "You mentioned Stack. What is a stack and what operations can you perform on it? ",
+			"lesson": "2",
+			"answer": "A stack is an abstract data type that is linear in structure and serves as a collection of homogeneous elements. Two operations can be performed on a stack--Push and Pop. Push adds an element to the top of the collection and pop removes the most recently added element. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 31,
+		"fields": {
+			"title": "LIFO-FIFO",
+			"question": "What is LIFO and what is FIFO?",
+			"lesson": "2",
+			"answer": "LIFO stands for Last in, First out. That is, the last element that was pushed on a stack for example, would be the first one to pop out of the stack. Conversely, FIFO stands for first in, first out, that is the first or oldest entry is processed first. For example in a FIFO queue or Operating system scheduling algorithm. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 32,
+		"fields": {
+			"title": "Stack",
+			"question": "What will happen if a fixed-sized stack is full and you try to push an element to it?",
+			"lesson": "2",
+			"answer": "If we try to push an element to a fixed sized stack that is already full, it gives a stack-overflow error. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 33,
+		"fields": {
+			"title": "Stack",
+			"question": "What is full-stack?",
+			"lesson": "2",
+			"answer": "The term full stack has a completely different usage. Full-stack development means all levels of technical work in software development."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 34,
+		"fields": {
+			"title": "Abstract data",
+			"question": "What is an abstract data type?",
+			"lesson": "2",
+			"answer": "An abstract data type is a mathematical model for data types, where a data type is defined by its behavior (that is, semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations"
+		}
+	}
+]

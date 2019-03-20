@@ -1,0 +1,172 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 1,
+		"fields": {
+			"title": "Definition DS 1",
+			"question": "What  is a data structure?",
+			"lesson": "1",
+			"answer": "A data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. In short, we may say that data structures are the main memory constructs."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 2,
+		"fields": {
+			"title": "Application 1",
+			"question": "What is the main purpose of data structures? Give some examples where data structures are useful.",
+			"lesson": "1",
+			"answer": "Data structures provide a means of an efficient access and management of large amounts of data, for example, in databases, internet indexing services, data access and manipulations within a program, and so on. Different types of data structures are suited to different kinds of tasks."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 3,
+		"fields": {
+			"title": "File structure 1",
+			"question": "What are file structures? What is its purpose?",
+			"lesson": "1",
+			"answer": "File structures are secondary storage  based constructs used for the purpose of minimizing the storage space and access time. A file structure allows applications to read, write and modify data efficiently from and to secondary storages such as disk or peripheral memory."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 4,
+		"fields": {
+			"title": "FS types -1",
+			"question": "Can you name some of the types of file structures?",
+			"lesson": "1",
+			"answer": "File structures for sequential access can be sequential files, and for random access, indexed files and hashed files.  B-trees are often used as file structures. An index table is used in FAT 32 which is an older file system but still commonly used in U S B flash drives. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 5,
+		"fields": {
+			"title": "Indexed file",
+			"question": "What is an indexed file?",
+			"lesson": "1",
+			"answer": "An indexed file is a file structure with an index that allows easy random access to any record given its file key. The key must be such that it uniquely identifies an address of a record. The indices are created along with the file and maintained by the system. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 6,
+		"fields": {
+			"title": "Hashed file 1",
+			"question": "What is a hashed file? .",
+			"lesson": "1",
+			"answer": "A hashed file uses a mathematical function called hash function to map the key to index or address which is used by the operating system to access the record. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 7,
+		"fields": {
+			"title": "Hashed file 2",
+			"question": "Can you name some hashing methods and briefly describe how they work?",
+			"lesson": "1",
+			"answer": "There are several methods of hashing. For example, in the direct hashing, the key is the data file address without any algorithmic manipulations. In the Modulo division hashing the address is the remainder of key divided by the file size plus 1. In digit extraction hashing, selected digits are extracted from the key and used as the address."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 8,
+		"fields": {
+			"title": "Vector DS",
+			"question": "What is a vector in data structures?",
+			"lesson": "1",
+			"answer": "A vector is a resizable array.  A vector can be expanded or shrunk using grow or shrink functions."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 9,
+		"fields": {
+			"title": "Implementation -1",
+			"question": "How is a vector implemented in the computer memory? How does the size of a vector grow? ",
+			"lesson": "1",
+			"answer": "A vector is implemented as a contiguous memory block. A vector can be grown either explicitly or automatically by adding data. In practice, it grows by doubling its allocated space instead of incrementing it."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 10,
+		"fields": {
+			"title": "Implementation -1",
+			"question": "When will you not use a vector?",
+			"lesson": "1",
+			"answer": "A vector is not suitable in some cases, for example, if we need to delete an entry in a vector, it would be an expensive operation. In that case, a linked list is better suited."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 11,
+		"fields": {
+			"title": "Linked list 1",
+			"question": "What are linked lists in data structures? Why are lists better than vectors?",
+			"lesson": "1",
+			"answer": "A list is a data structure construct using pointers as links. A linked list is more efficient for deletions/addition of entries than a vector because it need not be stored as a contiguous block in the memory."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 12,
+		"fields": {
+			"title": "Linked list and array",
+			"question": "So, why don't we just use linked lists, why use arrays at all? Are there any disadvantages of linked lists as compared to arrays?",
+			"lesson": "1",
+			"answer": "Although linked lists have the advantage of easy insertion/deletion and dynamic sizing, they have a few disadvantages, for example, For each element, we need to store the corresponding pointers and we can access the elements only sequentially not randomly."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 13,
+		"fields": {
+			"title": "Doubly linked list",
+			"question": "What are singly-linked lists, and doubly-linked lists?",
+			"lesson": "1",
+			"answer": "In a singly-linked list, for each node, the pointer links help traverse in only one direction in the list.  A doubly linked list stores pointer links for both the next-node and the previous-node which allows traversal in both directions of the list."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 14,
+		"fields": {
+			"title": "CSL list",
+			"question": "Is there any other type of linked list that you are aware of? And where can it be used?",
+			"lesson": "1",
+			"answer": "There are other types of linked-lists, for example, a circular singly-linked list or circular doubly-linked list where all nodes are connected to form a loop or a circle, so any node can be a starting point for traversal. These can be useful in representing an array that is circular in structure, for example, the corners of a polygon or a set of processes that are to be time-shared in a round-robin order.  "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 15,
+		"fields": {
+			"title": "Map 1",
+			"question": "What is a map or a dictionary in data structures?",
+			"lesson": "1",
+			"answer": "A map (which is also called a dictionary or an associative array) is key-value pair based abstract data type. The implementations may have different names in different languages. For example, in Python, it is called dictionaries and in Java, it is called HashMaps and Hashtables."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 16,
+		"fields": {
+			"title": "Maps advantage",
+			"question": "What are the advantages of using the map as a data construct? Can you explain with an example?",
+			"lesson": "1",
+			"answer": "A map is efficient for key-based lookup operations. For example, if we store the information such as scores or grades about the students of a school with their names as the key, it is very efficient and straight-forward to retrieve the information on any student by searching through the keys, names in this case."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 17,
+		"fields": {
+			"title": "Map implementation",
+			"question": "What are the different implementations of the map?",
+			"lesson": "1",
+			"answer": "A map is implemented either using hash map or binary search trees. "
+		}
+	}
+]

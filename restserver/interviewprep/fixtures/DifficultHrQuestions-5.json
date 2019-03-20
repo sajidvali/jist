@@ -1,0 +1,172 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 280,
+		"fields": {
+			"title": "Job change",
+			"question": "Why are you changing your job? or why are you leaving your current job?",
+			"lesson": "5",
+			"answer": "I have two years of experience at my current job. I have learned many things and gained technical expertise in software design, coding, testing etc. I find your company and particularly this position are better suited for my knowledge, interests and growth."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 281,
+		"fields": {
+			"title": "Reason for change",
+			"question": "Is there any other reason you are changing the job? Something we should know about?",
+			"lesson": "5",
+			"answer": "I believe your company will offer me many new and exciting challenges and I can contribute substantially more here."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 282,
+		"fields": {
+			"title": "Detailed reason",
+			"question": "What exactly do you think is a better match for this position than your current job?",
+			"lesson": "5",
+			"answer": "As I see from the job description, there is more focus on developing the next generation software, application of big data and artificial intelligence. That is exactly where my main technical strength lies. I can surely help create the products that your company is developing. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 283,
+		"fields": {
+			"title": "Reference",
+			"question": "I see from your reference or recommendation letter that you have worked on only one project. How did you gain experience in all the different things that you mentioned?",
+			"lesson": "5",
+			"answer": "We are a small team and it was easy for me to communicate with everyone. I used to spend some extra time every day learning about the entire project and all the various tasks others were working on. And slowly I got involved in them, helped them diagnose and solve problems, also some times fill in for them whenever needed. So I picked up skills in conceptual design, detailed development, testing, documentation etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 284,
+		"fields": {
+			"title": "specific experience",
+			"question": "Tell us about one specific experience that you can bring in to our company.",
+			"lesson": "5",
+			"answer": "I have solved many challenging problems in software integration at my current job. I am sure I can help your company and your customers in that area. As new challenges are given, I will learn the necessary skills and apply."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 285,
+		"fields": {
+			"title": "Why our company?",
+			"question": "I guess you are applying for jobs to many other companies. Is there anything about our company or this position that you really like?",
+			"lesson": "5",
+			"answer": "I know a couple of people who work at your company. I have checked with them and understood that your company encourages innovation. I have a few ideas I would like to propose. I am hoping your company would see the technological and economic benefits and someday, allow me to work on them."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 286,
+		"fields": {
+			"title": "Name dropping",
+			"question": "Who do you know in this company and how?",
+			"lesson": "5",
+			"answer": "Mr. Fred Wilson of business development department is a family friend and Mr. Bose of R&D is an alumnus of our college. I have been in touch with them for quite some time."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 287,
+		"fields": {
+			"title": "Missing information",
+			"question": "We checked your profile on a professional network site and found that you worked for Inventus-systems for a while. But you did not mention it in your resume. Can you explain to me why?",
+			"lesson": "5",
+			"answer": "Yes, I worked for Inventus-systems for 5 months. I had a very interesting project that needed to be finished in 6 months. The gentleman who was responsible for this project was leaving. So I took up the challenge, worked very hard and finished it in 5 months. Unfortunately, I had some short-term health issues and had to quit. Before I left, I made sure that everything of the project had been thoroughly checked, documented, and that someone in the team knew every detail to proceed for final testing."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 288,
+		"fields": {
+			"title": "Cornering the candidate",
+			"question": "But that does not explain why you did not mention it in your résumé.",
+			"lesson": "5",
+			"answer": "I am very sorry. But realistically speaking, mentioning just 5 months work at a company may raise a flag and my application may be rejected during preliminary screening and I would not have had this opportunity for an interview with you."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 289,
+		"fields": {
+			"title": "Lost job",
+			"question": "Have you ever been fired or laid off?",
+			"lesson": "5",
+			"answer": "I have never been fired. I always worked to the highest standard, got along very well with colleagues and my managers. However, at my first job, the company was downsizing and everyone from our group was laid-off. Fortunately, I soon found a job in another company."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 290,
+		"fields": {
+			"title": "Honesty",
+			"question": "Suppose, you have to lie to the customer for the company, would you do it?",
+			"lesson": "5",
+			"answer": "I try to be as honest as possible. But, if ever it becomes necessary for the benefit of the company and at the same time I do not see any serious harm to the customers, I may consider handling the situation as diplomatically as possible."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 291,
+		"fields": {
+			"title": "Overtime",
+			"question": "Sometimes we have to work long hours and even weekends to finish the projects. Are you willing to do that?",
+			"lesson": "5",
+			"answer": "Absolutely, yes. For me, finishing a project properly before the deadline is extremely important. And working hard and long hours are often necessary for that. I will gladly do it whenever necessary. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 292,
+		"fields": {
+			"title": "Salary 1",
+			"question": "How much salary are you expecting? Or What's your salary expectations?",
+			"lesson": "5",
+			"answer": "Well for me, the type of work and culture is more important. Currently, I get 100k. I am hoping to get somewhat higher. So, I would accept any reasonable offer."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 293,
+		"fields": {
+			"title": "Salary 2",
+			"question": "Well, we will surely pay a reasonable and competitive salary based on our structure. Here is our employee benefits brochure. As you will see, our pension and insurance benefits are quite competitive. ",
+			"lesson": "5",
+			"answer": "Thank you. May I take this with me and look at it at a later time at home, please?"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 294,
+		"fields": {
+			"title": "Question for the Interviewer",
+			"question": "Well, I think we have learned quite a bit about you. Do you have any question for us?",
+			"lesson": "5",
+			"answer": "Thank you. I have gone through the job description. I would like to know a bit more about the kind of projects you are working on where I may contribute."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 295,
+		"fields": {
+			"title": "Reply of Interviewer",
+			"question": "Well, currently we are in the process of upgrading our technology, it is a big challenge especially because each of our customers has some specific requirements. So you may have to go to the clients, help upgrade and trouble-shoot their problems, demo new releases and train them, and so on. Anything else? ",
+			"lesson": "5",
+			"answer": "That sounds very exciting. That's all I wanted to know for now. Thank you very much."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 296,
+		"fields": {
+			"title": "Closing the Interview",
+			"question": "Well, I think we are also finished with the interview. We have a few more candidates to interview and will let you know about our decision early next week.",
+			"lesson": "5",
+			"answer": "Thank you very much for giving me this opportunity. I look forward to hearing from you."
+		}
+	}
+]

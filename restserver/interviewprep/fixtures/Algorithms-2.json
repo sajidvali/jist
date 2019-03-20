@@ -1,0 +1,162 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 62,
+		"fields": {
+			"title": "Tree traversal",
+			"question": "What is a tree traversal? ",
+			"lesson": "5",
+			"answer": "A tree traversal or tree search is the process of visiting each node in a tree data structure, exactly once."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 63,
+		"fields": {
+			"title": "Traversal approach",
+			"question": "How would you classify the various types of binary tree traversal?",
+			"lesson": "5",
+			"answer": "A tree traversals can be classified into Breadth First (or level-order traversal) and Depth First Traversal. The Depth First traversal can be of the type preorder, in-order, or post-order traversal depending on the order in which the nodes are visited."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 64,
+		"fields": {
+			"title": "Breadth First Search",
+			"question": "Can you describe the BFS algorithm briefly?",
+			"lesson": "5",
+			"answer": "Breadth First Search or BFS is an algorithm for traversing a graph. In BFS, we start with a node and search the nodes layer-wise or breadth-wise and then move to the next level or layer and keep track of which nodes have been visited using, for example, a boolean array."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 65,
+		"fields": {
+			"title": "Monte Carlo search",
+			"question": "What is Monte Carlo tree search? Give some examples where it is used.",
+			"lesson": "5",
+			"answer": "Monte Carlo tree search or MCTS is a heuristic search algorithm for some kinds of decision processes by random sampling of the search space, expanding the search tree, and analyzing the most promising decisions or moves. MCTS is used in computer games such as Go, chess, bridge, and poker."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 66,
+		"fields": {
+			"title": "Bellman Ford",
+			"question": "What is the Bellman Ford algorithm for finding the single source shortest paths?",
+			"lesson": "5",
+			"answer": "The Bellman-Ford algorithm finds the single source shortest paths by repeatedly relaxing distances until there are no more distances to relax. Relaxing distances is done by checking if an intermediate point provides a better path than the currently chosen path. After a number of iterations that is slightly less than the node count, we can check if the solution is optimal. If not, there is a cycle of negative edges that will provide better paths infinitely long."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 67,
+		"fields": {
+			"title": "Dijkstra algorithm",
+			"question": "What are the main advantages of Bellman Ford algorithm over Dijkstra's algorithm?",
+			"lesson": "5",
+			"answer": "Bellman-Ford algorithm goes through each edge in every iteration whereas Dijkstra's algorithm looks only to the immediate neighbors of a vertex. Bellman Ford algorithm works also works with graphs in which the edges can have negative weights, where Dijkstra's algorithm may fail."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 68,
+		"fields": {
+			"title": "Pattern search",
+			"question": "Can you name a few pattern searching algorithms?",
+			"lesson": "5",
+			"answer": "There are several pattern searching algorithms such as Naïve string search algorithm, Rabin-Karp algorithm, Knuth-Morris-Pratt or KMP algorithm, Boyer-Moore algorithm and so on."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 69,
+		"fields": {
+			"title": "Boyer Moore",
+			"question": "Can you explain the idea behind the Boyer-Moore algorithm in simple words to us?",
+			"lesson": "5",
+			"answer": "The Boyer-Moore algorithm searches for occurrences of pattern P in text T by performing explicit character comparisons at different alignments. It preprocesses the pattern and the information gained from that is used to skip as many alignments as possible. The main idea is to compare the end of the pattern to the text and thus, in case of a mismatch, avoid unnecessary backward search along the text. If the character of the text does not match any of the characters in the pattern, then the search can be skipped by the length of the pattern. This makes the Boyer-Moore algorithm quite efficient and it is the standard benchmark for string search algorithms. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 70,
+		"fields": {
+			"title": "String search",
+			"question": "Can you give us some practical applications where the string search is used?",
+			"lesson": "5",
+			"answer": "String searching is used in text editors, word processors, syntax checkers, spam filters, DNA pattern matching, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 71,
+		"fields": {
+			"title": "Aho Corasick",
+			"question": "Do you know how the Aho-Corasick algorithm works? ",
+			"lesson": "5",
+			"answer": "Aho-Corasick string searching algorithm constructs a finite-state machine that resembles a trie with additional links between the various internal nodes. These additional links allow fast transitions between failed string matches to other branches of the trie that share a common prefix. This allows the automation to transition between string matches without the need for back-tracking."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 72,
+		"fields": {
+			"title": "Hamiltonian Path",
+			"question": "What is a Hamiltonian path? Do you know of any algorithm to find the Hamiltonian path?",
+			"lesson": "5",
+			"answer": "The Hamiltonian path is a path in a directed or undirected graph that visits each vertex exactly once. The Steinhaus-Johnson-Trotter algorithm or SJT algorithm can be used to find the Hamiltonian paths. It generates all the permutations of a graph…( add more details)"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 73,
+		"fields": {
+			"title": "NP complete",
+			"question": "What is an NP-complete problem? Can you explain it in simple terms?",
+			"lesson": "5",
+			"answer": "A nondeterministic polynomial time or  NP-complete problem is a problem for which the time required to solve the problem using any known algorithm increases rapidly with the size of the problem and hence solved by heuristic methods and approximate algorithms.  There are many NP-complete problems, such as Graph coloring problem, Berth allocation problem, the Hamiltonian path problem, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 74,
+		"fields": {
+			"title": "Scheduling algo",
+			"question": "Can you name some scheduling algorithms used in Operating systems?",
+			"lesson": "5",
+			"answer": "Some of the algorithms for OS job scheduling algorithms are First-come -First-served, Shortest-Job-Next, Priority Scheduling, Round Robin, Multiple-level Queues Scheduling etc. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 75,
+		"fields": {
+			"title": "Round Robin",
+			"question": "Can you describe how Round Robin Scheduling works?",
+			"lesson": "5",
+			"answer": "Round Robin is a preemptive process scheduling algorithm. Each process is provided a fixed time to execute. Once a process is executed for a given time period, it is preempted and the other process executes for a given time period. Context switching is used to save states of preempted processes."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 76,
+		"fields": {
+			"title": "Swarm intelligence",
+			"question": "Can you name a few Swarm intelligence algorithms?",
+			"lesson": "5",
+			"answer": "Some of the swarm intelligence algorithms are Altruism algorithm, Ant colony optimization, Artificial bee colony algorithm, Bat algorithm, particle swarm optimization, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 77,
+		"fields": {
+			"title": "Ant colony",
+			"question": "What do you know about ACO and where it is used?",
+			"lesson": "5",
+			"answer": "Ant colony optimization or ACO algorithm is a probabilistic technique based on the actions of an ant colony for finding good paths through graphs. Artificial ants locate optimal solutions by moving through a parameter space representing all possible solutions and keeping track of their positions and quality of their solutions. ACO is used in job-shop scheduling, network routing, urban transportation systems, image processing, etc."
+		}
+	}
+]

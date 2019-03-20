@@ -1,0 +1,162 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 230,
+		"fields": {
+			"title": "Teamwork 1",
+			"question": "Do you like to work alone or in a team? or Do you prefer working independently to working with others?",
+			"lesson": "2",
+			"answer": "I like working in a team. I get along very well with people and colleagues. After discussions with the team, once the exact tasks for individuals have been assigned, I like to fully concentrate and do my part alone. Naturally, keeping in touch with the team members to ensure my part fits in well with others' parts. I make sure there is no communication gap. Finally, it is the teamwork that makes a project successful."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 231,
+		"fields": {
+			"title": "Team player",
+			"question": "How would you build a rapport with your team members and co-workers?",
+			"lesson": "2",
+			"answer": "I will actively participate in the team meetings, show interest and excitement in what they are working on, and learn how everyone's work fits into the entire project. I will motivate them, help them when needed. Just that helping gesture builds trust and bond and boosts the team spirit. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 232,
+		"fields": {
+			"title": "Conflict management",
+			"question": "If you ever have a conflict with your boss of a colleague, how would you handle it?",
+			"lesson": "2",
+			"answer": "I believe, staying calm, respectful, open-minded, reasonable, and discussing the problem is the best way to resolve any conflict. In this way, one can find the actual problem, its root cause, and then solve it. Sometimes when someone is very upset and the conflict is about to escalate, it is better to back off, say 'sorry, we should think about it and discuss later.' That gives both sides time to calm down, rethink, and solve the problem. If it was because of something I did wrong, I will certainly admit it, apologize and make sure it doesn't happen again. That is what I would do. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 233,
+		"fields": {
+			"title": "Team motivation",
+			"question": "Can you give an example of how your colleagues may benefit by working with you? ",
+			"lesson": "2",
+			"answer": "For example, during our project work, one of our team members had problems with his code. He worked hard to find the problem and he was getting frustrated. I volunteered to test his part of the program with simple test cases. I stayed up all night and meticulously went through the code, located the bug, and gave suggestions to correct it and he could fix it in a day. Then I tested it again for him before it was integrated into our project. That simple gesture really made our team stronger."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 234,
+		"fields": {
+			"title": "Cooperation",
+			"question": "So, are you saying that you leave your work to help others or do you just want to act like their leader?",
+			"lesson": "2",
+			"answer": "I help only as much as is essential and urgent. I do not go out of my way to do others' work. My work always has top priority. However, in teamwork, it is not my style to try to outshine the others or take credit for helping, rather see that the entire team completes the project successfully. Yes, sometimes I do take the initiative to help, but I never want to act as if I am the leader or I am better in any way."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 235,
+		"fields": {
+			"title": "Project 1",
+			"question": "You have mentioned your academic project several times. I would like to know what it is about. Can you describe your project to me in a minute?",
+			"lesson": "2",
+			"answer": "( This answer you have to prepare yourself. Take the abstract of your project, rewrite it in simple words, so someone unfamiliar with the subject can understand. Add an interesting and easily-understood example of where your work would be useful. Read it and describe it to someone to make sure it is clear and interesting. Memorize it, but narrate it slowly and clearly with some exciting gestures. Keep another more technically involved version ready for the technical interview. )"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 236,
+		"fields": {
+			"title": "Adaptability",
+			"question": "That seems to be a very interesting project. But, your project work and experience seem to be very different from what we do. How would you handle this change?",
+			"lesson": "2",
+			"answer": "I like the changes and challenges. My fundamentals are quite strong and I can apply the engineering principles I have learned equally well in various fields. I learn quickly and like solving problems using my newly acquired skills. I am sure this position will give me such challenges and opportunities to serve the company and the customers."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 237,
+		"fields": {
+			"title": "Problem solving",
+			"question": "What is your approach to solving a problem? What are the general steps? Or If I give you a small project to do, how would you do it?",
+			"lesson": "2",
+			"answer": "First, I study the problem, understand it and then, define the problem and our objective as precisely as possible. I write down what major steps are to be taken to solve the problem, what knowledge and resources we have, what we need to learn, What broader system this work would be a part of, what can go wrong, etc. in a rough plan. I do some literature survey to find out how the problem or a similar problem has been solved. Select the best methods and quickly build a model to solve a few sample problems. When I have some success, I finalize the steps and do a more detailed development. Of course, test it thoroughly to see if our solution really works, and document everything I have done, including assumptions, scope, limitations, and possible extension. Finally, I distribute it to those whom it may concern."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 238,
+		"fields": {
+			"title": "Quick learner",
+			"question": "That's good. However, suppose your task is to solve a problem related to a domain very different from yours. Let's say a manufacturing plant has too much material wasted and the management wants to reduce it. How would you go about solving that problem?",
+			"lesson": "2",
+			"answer": "I have to study that problem first and understand it, gather information from experienced workers in that particular plant, find the root causes, see at what step of the manufacturing process how much material is wasted. Then decide where is it worth saving, if the process itself can be improved or possibly the design of the product can be modified to save on raw materials, if in some parts of the process newer technology and machines can be used, if part of the waste can be recycled, etc. Possibly there are several options for reducing waste. Naturally, I have to do a detailed cost analysis to see what brings the best benefit-to-cost for the manufacturer."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 239,
+		"fields": {
+			"title": "Domain knowledge",
+			"question": "Why would you gather information from the workers of the plant? And what kind of information would you need from them?",
+			"lesson": "2",
+			"answer": "Those who are involved in the problem, generally, know the problems, at least part of the problems, quite closely. They can tell exactly how much raw material they use and how much is wasted and why. They may or may not have a solution to the entire problem, but their task-level information would be invaluable to me for the detailed analysis and help me put together an overall plan for saving raw materials waste and hence the cost. Talking to the workers has another big advantage of acceptability of the solution and necessary changes by the employees themselves."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 240,
+		"fields": {
+			"title": "Meeting deadlines 1",
+			"question": "Can you tell me about a time when you finished your work before the deadline?",
+			"lesson": "2",
+			"answer": "When I was doing my internship, I was given the task to analyze the existing system (name of the system) and prepare a report. I worked an extra 3 hours a day to learn the system, analyze it, run all standard tests, and produce the report a week ahead of time. Then I spent a few days coming up with ideas for improvements to the system and added that to the report. My supervisor was very happy and decided to implement one of my suggestions. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 241,
+		"fields": {
+			"title": "Handling stress 1",
+			"question": "How do you handle stress? Or How do you handle pressure, work-load, and urgency?",
+			"lesson": "2",
+			"answer": "I plan my work very well and work systematically. Still, sometimes, there may be an unexpected workload, especially if something goes wrong. So I have to work several hours extra every day till the work is finished. However, I enjoy it and feel no stress. In fact, I work faster under pressure and urgency because I take full responsibility for my work and know how important it is for the success of the project and the entire team."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 242,
+		"fields": {
+			"title": "Teamwork 2",
+			"question": "Suppose, you are doing your work and one of the team members is not getting ahead with his or her work. What will you do? Will you complain to the team leader or hide the problem?",
+			"lesson": "2",
+			"answer": "I will surely help my colleague as much as I can to ensure we are all progressing together. I will surely not complain to the team leader. However, if it seems that the colleague and I cannot do that part of the work, I will encourage my colleague to directly talk to the team leader and ask for help."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 243,
+		"fields": {
+			"title": "Supporting teams 1",
+			"question": "Also, sometimes, you may have to accompany our sales team, meet with customers, support them, and so on. How do you feel about that?",
+			"lesson": "2",
+			"answer": "Yes. I'd like to learn various aspects of the business at every opportunity and help the company in every way possible. Meeting customers and supporting the sales team would broaden my experience."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 244,
+		"fields": {
+			"title": "Hobbies 1",
+			"question": "Besides studies and work, what do you do? or How do you spend your extra time?",
+			"lesson": "2",
+			"answer": "I voluntarily teach programming at a local school. I read technology magazines and biographies. I like jogging and recently joined a fitness club. And sometimes on the weekends, I get together with a few friends for a game or discussions. So I keep myself busy."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 245,
+		"fields": {
+			"title": "Closure",
+			"question": "OK. I think we are finished with this interview. We would like to have another round of interview with you next Monday at 11 A M. Can you make it?",
+			"lesson": "2",
+			"answer": "Yes, sir (or ma'am). I can certainly make it. Thank you very much."
+		}
+	}
+]

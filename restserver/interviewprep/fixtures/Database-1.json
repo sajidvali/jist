@@ -1,0 +1,152 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 95,
+		"fields": {
+			"title": "DB definition",
+			"question": "What is a database? ",
+			"lesson": "7",
+			"answer": "A database is an organized collection of interrelated data stored and managed electronically by a computer program called a database management system."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 96,
+		"fields": {
+			"title": "Use of DB",
+			"question": "Can you give a simple example of where a database can be used?",
+			"lesson": "7",
+			"answer": "An example of a database would be that of all the customers of a company, their contact addresses and the products they purchase."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 97,
+		"fields": {
+			"title": "D B M S 1",
+			"question": "What is a Database management system?",
+			"lesson": "7",
+			"answer": "A Database Management System or D B M S is a software application that organizes a collection of interrelated data in a certain systematic way so that they can be efficiently stored, maintained, searched, retrieved, updated, processed and analyzed for useful purposes. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 98,
+		"fields": {
+			"title": "D B M S interaction",
+			"question": "Besides these, is there anything else a D B M S does?",
+			"lesson": "7",
+			"answer": "A D B M S also facilitates interaction with the administrators, programmers, other applications and the end users."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 99,
+		"fields": {
+			"title": "D B M S example",
+			"question": "Can you name a few commonly used D B M S?",
+			"lesson": "7",
+			"answer": "Some commonly used D B M S are MyS Q L, Postgres, Oracle RD B M S, I B M DB2, Microsoft S Q L Server, MongoDB, SAP-HANA, Microsoft Access, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 100,
+		"fields": {
+			"title": "DB experience 1",
+			"question": "Which databases are you familiar with or have actually used?",
+			"lesson": "7",
+			"answer": "I am familiar with PostgreS Q L, MyS Q L, S Q Lite, and Oracle. During my internship, I have used Oracle and for a part of my project, I have used MyS Q L."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 101,
+		"fields": {
+			"title": "DB tools 2",
+			"question": "What Database development and management tools are you familiar with?",
+			"lesson": "7",
+			"answer": "I am familiar with MyS Q L Workbench, S Q L server management studio SSMS, Oracle S Q L Developer, and PG-Admin for PostgreS Q L. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 102,
+		"fields": {
+			"title": "S Q L 1",
+			"question": "What is S Q L? Is there any Standard S Q L?",
+			"lesson": "7",
+			"answer": "S Q L or Structured Query Language is a domain-specific programming language to create, manage and interact with a Relational database. There is a S Q L ANSI standard. However, various database vendors implement an extended subset of the Standard S Q L."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 103,
+		"fields": {
+			"title": "S Q L operations",
+			"question": "Give me a few examples of some common operations used with S Q L.",
+			"lesson": "7",
+			"answer": "Some common operations that can be performed with S Q L on the database are create, insert, select, update, delete, etc. also, numerous queries can be written with S Q L to get desired information from the database."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 104,
+		"fields": {
+			"title": "DB server",
+			"question": "What is a database server?",
+			"lesson": "7",
+			"answer": "A database server is the backend software application of the database in a client-server model. It could also mean the computer hardware where the database is installed and run."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 105,
+		"fields": {
+			"title": "DB Front end",
+			"question": "What is a database front end? How is it connected to the backend?",
+			"lesson": "7",
+			"answer": "A database front end is the user interface for accessing and interacting with the database. The front end and back-end may be connected either directly or through an API."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 106,
+		"fields": {
+			"title": "Relational DB",
+			"question": "Can you explain in short what a relational database is? ",
+			"lesson": "7",
+			"answer": "A relational database is based on a relational model of data where the data and their relations are organized in one or more tables of rows and columns. Each row or record is identified by a unique (primary) key which can also be used to refer to the corresponding records in other tables. The columns contain the various attributes or fields of a record. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 107,
+		"fields": {
+			"title": "NoS Q L",
+			"question": "Is there any other type of database? Where is it used?",
+			"lesson": "7",
+			"answer": "There is also a Non-relational database or NoS Q L database that uses models other than tabular relations for ease of scaling to clusters of machines. It uses query languages that may be different from S Q L. It is often used in big data and real-time web applications."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 108,
+		"fields": {
+			"title": "Functionalities",
+			"question": "What are the main functionalities of a D B M S?",
+			"lesson": "7",
+			"answer": "The main functionalities of a database management system are active rules, access control, concurrency control, redundancy management, metadata management, performance optimization, backup, and recovery, etc. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 109,
+		"fields": {
+			"title": "Codd 12 Rules",
+			"question": "Do you know anything about Codd's twelve rules and can you name them?",
+			"lesson": "7",
+			"answer": "In a 1970 paper, Dr. Edgar Codd proposed twelve rules for a database management system to qualify as a relational database management system. They are the foundation rule, the information rule, the guaranteed access rule, systematic treatment of NULL values, dynamic catalog, the comprehensive data sublanguage rule, the view updating rule, High-level insert, update and delete possibility; physical data independence, logical data independence, integrity independence, distribution independence, non-subversion rule."
+		}
+	}
+]

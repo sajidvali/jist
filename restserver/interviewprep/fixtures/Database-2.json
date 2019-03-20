@@ -1,0 +1,152 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 110,
+		"fields": {
+			"title": "Keys",
+			"question": "What are keys? Why are they used? ",
+			"lesson": "8",
+			"answer": "A key is a column (or field) used to uniquely identify a row or record in a table. A key can be used to access the other data fields of a particular record, access the corresponding records in other tables, and so on. (Keys can also be used to compare, filter, and select some records from all the records based on some given criteria or sort all the records, etc.)"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 111,
+		"fields": {
+			"title": "Primary key",
+			"question": "What is a primary key? What are the restrictions on it?",
+			"lesson": "8",
+			"answer": "The primary key is a column or field in a table that has a unique value for each row and thus, can uniquely identify a record. The primary key cannot have a NULL value. A table can have only one primary key and must be explicitly defined and once set cannot be changed. Actually, the primary key can be composed of more than one column, as long as it refers to the rows or records uniquely. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 112,
+		"fields": {
+			"title": "Foreign key",
+			"question": "What is a Foreign key? ",
+			"lesson": "8",
+			"answer": "A foreign key is a key used in a table that refers to the primary key defined in another table. Unlike the primary key, a foreign key in a table can be NULL or non-unique."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 113,
+		"fields": {
+			"title": "PK and FK",
+			"question": "Can you explain the difference between a primary key and a foreign key with an example?",
+			"lesson": "8",
+			"answer": "For example, in a company's database, in the employee information table, the unique employee ID numbers can be used as the primary key. In another table of projects, staff, hours worked, and monthly cost calculation, one can use the employee ID as a foreign key. Then, if an employee has worked on several different projects, his employee ID would appear as a foreign key several times, and his total pay can be calculated, at the same time his hours can be charged separately to various projects."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 114,
+		"fields": {
+			"title": "Join operator",
+			"question": "What is a join operation? Where is it used?",
+			"lesson": "8",
+			"answer": "A join operation combines the columns of two tables using a common column to maintain the correct correspondence of the records such that the result of the join operation acts like one table. Join is used to retrieve desired data from two different tables of a relational database."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 115,
+		"fields": {
+			"title": "Join types",
+			"question": "What are the different kinds of joins?",
+			"lesson": "8",
+			"answer": "There are 4 types of join operations: inner join, left join, right join, and outer join."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 116,
+		"fields": {
+			"title": "Join types Explain",
+			"question": "Can you explain what the various types of joins are are?",
+			"lesson": "8",
+			"answer": "The inner join, which is the default join operation, combines all records that match the specified condition in both tables. The left join combines all records of the left table with only the matching records of the right table. The right join combines All records of the right table with only the matching records of the left table. The full outer join operation combines records that match the condition in either table. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 117,
+		"fields": {
+			"title": "Join types 2",
+			"question": "Have you heard of Cross join and Self Join? What do they do?",
+			"lesson": "8",
+			"answer": "Yes, sir. The cross join gives the Cartesian products the records of two tables, and self join joins a table to itself."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 118,
+		"fields": {
+			"title": "Schema",
+			"question": "What is a schema? What is the purpose of a schema in a relational database? ",
+			"lesson": "8",
+			"answer": "The schema is the overall logical design and structure of the database. It is used to visualize the organization of the tables and their relationships."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 119,
+		"fields": {
+			"title": "Hierarchy",
+			"question": "Can you tell me what the containment hierarchy of a relational database is?",
+			"lesson": "8",
+			"answer": "The containment hierarchy of a relational database is as follows: the catalog contains all the schemas, schemas contain all the tables and views, and the tables contain columns and rows."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 120,
+		"fields": {
+			"title": "Inner Querry",
+			"question": "What is a nested query or an inner query? And where is it used?",
+			"lesson": "8",
+			"answer": "A nested query (or inner query or subquery) is a query within a query. It can be used to select certain data from another selected data set, which may be from the same or a different table."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 121,
+		"fields": {
+			"title": "Querry Example",
+			"question": "Give me an example of a nested query which can be used in a realistic situation to solve a problem.",
+			"lesson": "8",
+			"answer": "For example, suppose a project seems to involve too many people and we want to reduce the size. Then first, we want to find out the names of the employees who have worked on the project for less than 10 hours in the past month. We can create a nested query where the inner query is to get a list of employee IDs from a project_work table of those who meet that condition, and then run an outer query on that list to get their names and email addresses from an employee_information table."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 122,
+		"fields": {
+			"title": "ER Model",
+			"question": "What can you tell us about the ER model or the ER diagram?",
+			"lesson": "8",
+			"answer": "An entity-relationship or ER model is a technique of conceptual design of a database using a diagram to represent the entities and their relationships to each other. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 123,
+		"fields": {
+			"title": "ER example",
+			"question": "Can you explain what an entity and and entity sets are with an example? ",
+			"lesson": "8",
+			"answer": "An entity is an object and is described by its attributes and is distinct from other objects. For example, for an online shop, a customer is an entity described by a set of attributes such as Customer_ID, Name, Age, Address, phone number etc. All customers form an entity set. Similarly, orders and products can be a different entity sets."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 124,
+		"fields": {
+			"title": "ER details",
+			"question": "What is entity relationship? I want to to know how are entities and relationships actually modeled and implemented? Feel free to use the the white-board if you like.",
+			"lesson": "8",
+			"answer": "A relationship is an association between entities. For example, a customer has a relationship with an order_placed and the order_placed has a relationship with several products."
+		}
+	}
+]

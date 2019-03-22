@@ -1,24 +1,68 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <a mat-button [routerLink]="['/']"><span class="title">Interview Prep</span></a>
-        <a mat-button *ngIf="user" [routerLink]="['/courses']">Courses</a>
-        <a mat-button [routerLink]="['/about']">About</a>
-        <span class="spacer"></span>
-        <a *ngIf="!user" mat-button [routerLink]="['/login']">Login</a>
-        <button mat-button [matMenuTriggerFor]="menu" *ngIf="user">
-            <img src="{{user.photoUrl}}" class="userimage">
-            <span class="username">{{user.name}}</span>
-        </button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item [routerLink]="['/profile']">
-                <mat-icon>account_circle</mat-icon>
-                <span>Profile</span>
-            </button>
-            <button mat-menu-item (click)="logout()">
-                <mat-icon>highlight_off</mat-icon>
-                <span>Logout</span>
-            </button>
-        </mat-menu>
-    </mat-toolbar-row>
+   <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+         <mat-icon>menu</mat-icon>
+      </button>
+   </div>
+   <a mat-button [routerLink]="['/']"><span class="title">Interview Prep</span></a>
+   <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button *ngIf="user" [routerLink]="['/courses']">
+         <mat-icon>apps</mat-icon>
+         <span class="leftmargin">Courses</span>
+      </a>
+      <a mat-button [routerLink]="['/about']">
+         <mat-icon>info</mat-icon>
+         <span class="leftmargin">About</span>
+      </a>
+   </div>
+   <span class="spacer"></span>
+   <div fxShow="true" fxHide.lt-md="true">
+      <a *ngIf="!user" mat-button [routerLink]="['/login']">
+         <mat-icon>fingerprint</mat-icon>
+         <span class="leftmargin">Login</span>
+      </a>
+      <button mat-button [matMenuTriggerFor]="menu" *ngIf="user">{{user.name}}</button>
+      <mat-menu #menu="matMenu">
+         <button mat-menu-item [routerLink]="['/profile']">
+            <mat-icon>account_circle</mat-icon>
+            <span>Profile</span>
+         </button>
+         <button mat-menu-item (click)="logout()">
+            <mat-icon>highlight_off</mat-icon>
+            <span>Logout</span>
+         </button>
+      </mat-menu>
+   </div>
+   <img *ngIf="user" src="{{user.photoUrl}}" class="userimage">
+
 </mat-toolbar>
-<router-outlet></router-outlet>
+
+<mat-sidenav-container fxFlexFill class="sidenav-container">
+   <mat-sidenav #sidenav fxLayout="column">
+      <mat-nav-list>
+         <a *ngIf="!user" mat-list-item [routerLink]="['/login']">
+            <mat-icon>fingerprint</mat-icon>
+            <span class="leftmargin">Login</span>
+         </a>
+         <a *ngIf="user" mat-list-item [routerLink]="['/profile']">
+            <mat-icon>account_circle</mat-icon>
+            <span class="leftmargin">Profile</span>
+         </a>
+         <a *ngIf="user" mat-list-item (click)="logout()">
+            <mat-icon>highlight_off</mat-icon>
+            <span class="leftmargin">Logout</span>
+         </a>
+         <a mat-list-item *ngIf="user" [routerLink]="['/courses']">
+            <mat-icon>apps</mat-icon>
+            <span class="leftmargin">Courses</span>
+         </a>
+         <a mat-list-item [routerLink]="['/about']">
+            <mat-icon>info</mat-icon>
+            <span class="leftmargin">About</span>
+         </a>
+      </mat-nav-list>
+   </mat-sidenav>
+   <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+   </mat-sidenav-content>
+</mat-sidenav-container>

@@ -7,10 +7,16 @@
     border-radius: 20px;
 }
 
-.username {
+.leftmargin {
     margin-left:10px;
 }
 
 .title {
     font-size: 2em;
+}
+
+.sidenav-container {
+      display: flex;
+      flex-direction: column;
+      
 }

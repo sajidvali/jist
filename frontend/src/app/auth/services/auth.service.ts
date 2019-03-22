@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { of, Observable } from 'rxjs';
+import { of, Observable, from, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { config } from 'src/app/config';
-import { catchError, mapTo, tap,map } from 'rxjs/operators';
+import { catchError, mapTo, tap } from 'rxjs/operators';
 import { User } from '../models/user';
 import { Tokens } from '../models/tokens';
 import { SocialUser } from 'angularx-social-login';
@@ -10,124 +10,119 @@ import { AuthService as SocialAuthService } from 'angularx-social-login';
 import { Router } from '@angular/router';
 
 @Injectable({
-  providedIn: 'root'
+   providedIn: 'root'
 })
 export class AuthService {
 
-  private readonly JWT_TOKEN = 'JWT_TOKEN';
-  private readonly REFRESH_TOKEN = 'REFRESH_TOKEN';
-  private loggedUser: User;
-  private socialUser:SocialUser;
-  constructor(private http: HttpClient, private socialAuthService:SocialAuthService, private router: Router) {
-    this.socialAuthService.authState.subscribe((user) => {
-      this.socialUser = user;
-    });
-  }
+   private readonly JWT_TOKEN = 'JWT_TOKEN';
+   private readonly REFRESH_TOKEN = 'REFRESH_TOKEN';
+   private socialUser: BehaviorSubject<SocialUser> = new BehaviorSubject<SocialUser>(null);
+   constructor(private http: HttpClient, private socialAuthService: SocialAuthService, private router: Router) {
+      //if user is logged in with Google already, it will fireup and login with backend at start
+      //this way we need not store our user in localstorage as the social login provider would be doing that.
+      this.socialAuthService.authState.subscribe((user) => {
+         if (user) {
+            this.http.post<any>(`${config.apiUrl}/api/token/`, { 'idtoken': user.idToken, 'provider': user.provider })
+            .subscribe(
+               tokens=>this.doLoginUser(user, tokens),   //success
+               error=>console.log(error),                //error
+               ()=>this.router.navigate(['/'])           //complete
+            )
+         }
+      });
+      // here we ensure that our tokens are valid, else we logout and have user authenticate again
+      if (this.isLoggedIn()) this.refreshToken();
+   }
 
-  getCollegeList() {
-    return this.http.get(`${config.apiUrl}/api/colleges/`);
-  }
+   // get the current user. We return the behavior subject as observable
+   // if no user is loggedin caller will get null
+   getLoggedInUser(): Observable<SocialUser> {
+      return this.socialUser.asObservable();
+   }
 
-  getFieldOfStudyList() {
-    return this.http.get(`${config.apiUrl}/api/studyfields/`);
-  }
+   // call sociial signup. We don't manage auth right!
+   socialsignin(provider: string): void {
+      this.socialAuthService.signIn(provider).catch(reason=>console.log(reason));
+   }
 
-  getProfile() {
-    return this.http.get(`${config.apiUrl}/interviewprep/profile/`);
-  }
+   logout() {
+      this.socialAuthService.signOut().catch(reason=>console.log(reason));
+      this.socialUser.next(null); // set next user to be null. IMPORTANT
+      this.doLogoutUser();
+      this.router.navigate(['/']);
+   }
 
-  updateProfile(data):Observable<boolean> {
-    return this.http.post<any>(`${config.apiUrl}/interviewprep/profile/`, data).pipe(
-      mapTo(true),
-      catchError(error => {
-        return of(false);
-      })
-    );
-  }
+   getJwtToken() {
+      return localStorage.getItem(this.JWT_TOKEN);
+   }
 
-  // hasProfile(user:SocialUser): Observable<boolean> {
-  //   return this.http.post<any>(`${config.apiUrl}/api/hasprofile/`, {'username':user.email})
-  //     .pipe(
-  //       tap(result=>this.loggedUser.hasProfile=result.status),
-  //       map(result=>result.status),
-  //       catchError(error => {
-  //         //alert(error.error);
-  //         return of(false);
-  //       }));
-  // }
+   isLoggedIn() {
+      return !!this.getJwtToken();
+   }
 
-  login(user: SocialUser): Observable<boolean> {
-    return this.http.post<any>(`${config.apiUrl}/api/token/`, {'idtoken':user.idToken, 'provider':user.provider})
-      .pipe(
-        tap(tokens => this.doLoginUser(user, tokens)),
-        mapTo(true),
-        catchError(error => {
-          return of(false);
-        }));
-  }
+   // refreshes token, else logs in again, else logs out
+   refreshToken(): Observable<boolean> {
+      return this.http.post<any>(`${config.apiUrl}/api/token/refresh/`, {
+         'refreshToken': this.getRefreshToken()
+      }).pipe(
+         tap((tokens: Tokens) => { this.storeJwtToken(tokens.access); }),
+         mapTo(true),
+         catchError(e => {
+            this.logout();
+            return of(false);
+         })
+      );
+   }
 
-  // in future also check for profileon backend and see if that needs updated.
-  // we can do it along with login or as a separate process.
+   private getRefreshToken() {
+      return localStorage.getItem(this.REFRESH_TOKEN);
+   }
 
-  logout() {
-    this.doLogoutUser();
-  }
+   private doLogoutUser() {
+      this.removeTokens();
+   }
 
-  userHasProfile():boolean {
-    return this.loggedUser && this.loggedUser.hasProfile;
-  }
+   private removeTokens() {
+      localStorage.removeItem(this.JWT_TOKEN);
+      localStorage.removeItem(this.REFRESH_TOKEN);
+   }
 
-  getJwtToken() {
-    return localStorage.getItem(this.JWT_TOKEN);
-  }
+   private doLoginUser(user: SocialUser, tokens: Tokens) {
+      this.socialUser.next(user);
+      this.storeTokens(tokens);
+   }
 
-  isLoggedIn() {
-    return !!this.getJwtToken();
-  }
+   private storeTokens(tokens: Tokens) {
+      localStorage.setItem(this.JWT_TOKEN, tokens.access);
+      localStorage.setItem(this.REFRESH_TOKEN, tokens.refresh);
+   }
 
-  // refreshes token, else logs in again, else logs out
-  refreshToken(): Observable<boolean> {
-    return this.http.post<any>(`${config.apiUrl}/api/token/refresh/`, {
-      'refreshToken': this.getRefreshToken()
-    }).pipe(
-      tap((tokens: Tokens) => {this.storeJwtToken(tokens.access);}),
-      mapTo(true),
-      catchError(e=> {
-        if(this.socialUser) return this.login(this.socialUser);
-        else {
-          this.socialAuthService.signOut();
-          this.logout();
-          this.router.navigate(['/login']);
-          return of(false);
-        }})
-    );
-  }
+   private storeJwtToken(jwt: string) {
+      localStorage.setItem(this.JWT_TOKEN, jwt);
+   }
 
-  private getRefreshToken() {
-    return localStorage.getItem(this.REFRESH_TOKEN);
-  }
+   //PROFILE
 
-  private doLogoutUser() {
-    this.loggedUser = null;
-    this.removeTokens();
-  }
+   getCollegeList() {
+      return this.http.get(`${config.apiUrl}/api/colleges/`);
+   }
 
-  private removeTokens() {
-    localStorage.removeItem(this.JWT_TOKEN);
-    localStorage.removeItem(this.REFRESH_TOKEN);
-  }
+   getFieldOfStudyList() {
+      return this.http.get(`${config.apiUrl}/api/studyfields/`);
+   }
 
-  private doLoginUser(user: SocialUser, tokens: Tokens) {
-    this.loggedUser = new User(user);
-    this.storeTokens(tokens);
-  }
+   getProfile() {
+      return this.http.get(`${config.apiUrl}/interviewprep/profile/`);
+   }
 
-  private storeTokens(tokens: Tokens) {
-    localStorage.setItem(this.JWT_TOKEN, tokens.access);
-    localStorage.setItem(this.REFRESH_TOKEN, tokens.refresh);
-  }
+   updateProfile(data): Observable<boolean> {
+      return this.http.post<any>(`${config.apiUrl}/interviewprep/profile/`, data).pipe(
+         mapTo(true),
+         catchError(error => {
+            return of(false);
+         })
+      );
+   }
 
-  private storeJwtToken(jwt: string) {
-    localStorage.setItem(this.JWT_TOKEN, jwt);
-  }
+   
 }

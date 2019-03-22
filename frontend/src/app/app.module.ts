@@ -6,8 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { HomeComponent } from './components/home/home.component';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatMenuModule, MatSidenavModule, MatTreeModule, MatListModule } from '@angular/material';
 import { AboutComponent } from './components/about/about.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,11 @@ import { AboutComponent } from './components/about/about.component';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    MatTreeModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

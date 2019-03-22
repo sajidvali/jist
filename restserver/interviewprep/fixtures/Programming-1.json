@@ -1,0 +1,162 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 174,
+		"fields": {
+			"title": "Programming experience",
+			"question": "Have you ever written a computer program?",
+			"lesson": "12",
+			"answer": "I have written a program for my academic project. Besides that, I have written a mobile App."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 175,
+		"fields": {
+			"title": "Language used",
+			"question": "Which programming language did you use for your project?",
+			"lesson": "12",
+			"answer": "I have used Java for my project."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 176,
+		"fields": {
+			"title": "Languages known 1",
+			"question": "Which programming languages are you familiar with?",
+			"lesson": "12",
+			"answer": "I know Python, C, C++, and Java quite well. I am also familiar with Visual Basic and Ruby."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 177,
+		"fields": {
+			"title": "Language familiarity",
+			"question": "Are you familiar with any languages needed to create Web Apps?",
+			"lesson": "12",
+			"answer": "I know HTML5, CSS, and JavaScript. For back-end development, I know Java, PHP, and Python."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 178,
+		"fields": {
+			"title": "C C++  1",
+			"question": "Currently, we are looking for someone who can write C C++ code. Have you written any code in C and C++. Are you comfortable writing codes in C  C++?",
+			"lesson": "12",
+			"answer": "Yes, sir ( or yes, maa'm ). I had to write C  C++ code for my homework assignments and the class project. Although that was a year ago, I believe, with a little practice, I can write C C++ code."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 179,
+		"fields": {
+			"title": "Pointers 1",
+			"question": "OK, let's see how much C C++ you know. What is a pointer and how is it used in the code? Can you explain with a simple example?",
+			"lesson": "12",
+			"answer": "In C C++, a pointer is a variable that contains the address of another variable.  As an example, a pointer that points to a variable x, we can declare    int  *px; Then the pointer can be assigned as px = &x , that is, px holds the address of x. If we want to fetch the actual value of x through this pointer and assign to a variable y, we can write y = *px. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 180,
+		"fields": {
+			"title": "Arrays 1",
+			"question": "How do you get the value of an element from an array in C? ",
+			"lesson": "12",
+			"answer": "In C, there are two ways to fetch the value of an element from an array. We can use the subscript for example x = a[i]. Or we can use a pointer pa = &a[0] or simply pa = a, which points to the zeroth element of the array a. Then to get the value of the i-th element we can write x = *(pa+i)"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 181,
+		"fields": {
+			"title": "Function 1",
+			"question": "How would you change the value of an argument of a function in C?",
+			"lesson": "12",
+			"answer": "Since in C the arguments are passed to a function by 'Call by value', we have to pass the pointer px to the argument instead of argument x itself. Then we can change the value of x as *px = z, for example."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 182,
+		"fields": {
+			"title": "Call by Value",
+			"question": "What is Call by value and what is Call by reference?",
+			"lesson": "12",
+			"answer": "In a function call, if we use call by value the actual value of the argument ( or parameter ) is passed, a copy is made within the function, stored at a different location and its change within the function is not reflected in the argument value of the caller function. Whereas, in call by reference, the argument location is passed to the function, so the calling and caller function share the same location of the argument Any change in the argument value made within the function changes the original argument value in the caller function."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 183,
+		"fields": {
+			"title": "C C++ difference",
+			"question": "What is the difference between C and C++?",
+			"lesson": "12",
+			"answer": "C is a procedural programming language. Whereas, C++ is a superset of C and may be used for procedural as well as object oriented programming?"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 184,
+		"fields": {
+			"title": "OOP 1",
+			"question": "What is object-oriented programming?",
+			"lesson": "12",
+			"answer": "Object oriented programming is a way of creating computer programs that  model real-life objects, with their attributes, their activities and interactions with each other."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 185,
+		"fields": {
+			"title": "OOP advantage",
+			"question": "What are the advantages of object-oriented programming over procedural programming?",
+			"lesson": "12",
+			"answer": "Object-oriented programming approach has a great advantage in the development of large and complex programs with many developers working on various parts of the program. Additionally, code maintenance and code reusability are easier in OOP."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 186,
+		"fields": {
+			"title": "OOP disadvantage",
+			"question": "What are the disadvantages of object-oriented programming over procedural programming?",
+			"lesson": "12",
+			"answer": "For certain specific purposes where much number crunching is necessary, procedural programming may be more efficient then object oriented programming. For example, for creating a numerical solver for large optimization problems."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 187,
+		"fields": {
+			"title": "Procedural and OOP",
+			"question": "Can you give an example where object oriented programming and procedural programming are mixed in a software package?",
+			"lesson": "12",
+			"answer": "The user interface and interactive modeling modules of many modern engineering design packages use object oriented programming. Whereas, the numerical solvers for the engineering analysis such as finite-element methods, are written following procedural programming."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 188,
+		"fields": {
+			"title": "Languages for OOP",
+			"question": "Which languages support object oriented programming? ",
+			"lesson": "12",
+			"answer": "Python, C++, Java,  Objective C, Visual Basic.NET support object oriented programming. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 189,
+		"fields": {
+			"title": "Actual coding",
+			"question": "Please go to the white-board and write the code for sorting an array of employee-name and salary by the salary in descending order.",
+			"lesson": "12",
+			"answer": "( Listen to the question carefully. You have to practise writing the code on your own. When you write the code on the whiteboard, keep talking about what you are doing so that the interviewer understands how you are thinking. You should write a few comments in English to explain the major steps involved.  Feel free to write the pseudo-code or draw a flowchart first, so that your approach, design and the logic are clear )"
+		}
+	}
+]

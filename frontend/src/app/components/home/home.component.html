@@ -1,12 +1,48 @@
-<div style="text-align:center; margin:0 auto;">
-   <div class="headtext" *ngIf="!user">
-      <p class="typetext">
-         Ever faced a live interview?
-      </p>
-      <p class="typetext">
-         Practice with us NOW.
-      </p>
+<div style="text-align:center; margin:0 auto">
+   <div class="intro" *ngIf="!user">
+      <img class="avatar" src="/assets/images/avatars.svg" />
+      <div class="headtext">
+         <p>
+            <span class="mat-display-1">Wondering what a live interview be like?</span>
+         </p>
+         <button mat-raised-button [routerLink]='["/login"]' color="primary">
+            <mat-icon>thumb_up</mat-icon>
+            <span class="mat-h1">Practice with us NOW</span>
+         </button>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="courses" style="height:300px;">
+         <mat-card style="max-width:350px">
+            <mat-card-header>
+               <mat-card-title>GENERAL</mat-card-title>
+               <mat-card-subtitle>Practice HR Interviews</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+               <mat-icon>meeting_room</mat-icon>
+               <p class="mat-h3">
+                  Face the latest and tresnding HR questions and learn how to handle them.
+               </p>
+            </mat-card-content>
+         </mat-card>
+         <mat-card style="max-width:350px">
+               <mat-card-header>
+                  <mat-card-title>TECHNICAL</mat-card-title>
+                  <mat-card-subtitle>Interview in various technical domains</mat-card-subtitle>
+               </mat-card-header>
+               <mat-card-content>
+                  <mat-icon>settings</mat-icon>
+                  <p class="mat-h3">
+                     Be it Computer Science, Machine Learning, Mechanical Engineering, Electrical or Electronics or any other stream, we have covered it all.
+                  </p>
+               </mat-card-content>
+            </mat-card>
+      </div>
+      <mat-divider></mat-divider>
+      <h1 class="mat-h1" style="margin-top:50px;">TESTIMONIALS</h1>
+      <testimonials [data]="testimonials"></testimonials>
    </div>
+
+
    <div class="headtext" *ngIf="user">
       <p class="typetext">
          ENJOY!!!

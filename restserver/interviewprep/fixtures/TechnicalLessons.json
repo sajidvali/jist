@@ -1,0 +1,119 @@
+[
+	{
+		"model": "interviewprep.lesson",
+		"pk": 1,
+		"fields": {
+			"title": "Data Structures 1",
+			"description": "Lesson on DS1",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 2,
+		"fields": {
+			"title": "Data Structures 2",
+			"description": "Lesson on DS2",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 3,
+		"fields": {
+			"title": "Data Structures 3",
+			"description": "Lesson on DS3",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 4,
+		"fields": {
+			"title": "Algorithms 1",
+			"description": "Lesson on Algorithms",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 5,
+		"fields": {
+			"title": "Algorithms 2",
+			"description": "Lesson on Algorithms",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 6,
+		"fields": {
+			"title": "Algorithms 3",
+			"description": "Lesson on Algorithms",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 7,
+		"fields": {
+			"title": "Data Bases 1",
+			"description": "Lesson on Data Bases",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 8,
+		"fields": {
+			"title": "Data Bases 2",
+			"description": "Lesson on Data Bases",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 9,
+		"fields": {
+			"title": "Data Bases 3",
+			"description": "Lesson on Data Bases",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 10,
+		"fields": {
+			"title": "Artificial Intelligence 1",
+			"description": "Lesson on AI",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 11,
+		"fields": {
+			"title": "Artificial Intelligence 2",
+			"description": "Lesson on AI",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 12,
+		"fields": {
+			"title": "Programming 1",
+			"description": "Lesson on Programming",
+			"courses": [1,2]
+		}
+	},
+	{
+		"model": "interviewprep.lesson",
+		"pk": 13,
+		"fields": {
+			"title": "Programming 2",
+			"description": "Lesson on Programming",
+			"courses": [1,2]
+		}
+	}
+]

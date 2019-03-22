@@ -6,15 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { HomeComponent } from './components/home/home.component';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatMenuModule, MatSidenavModule, MatTreeModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatMenuModule, MatSidenavModule, MatTreeModule, MatListModule, MatDividerModule, MatGridListModule } from '@angular/material';
 import { AboutComponent } from './components/about/about.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { VirtualScrollerModule } from 'ngx-virtual-scroller';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    TestimonialComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     FlexLayoutModule,
     MatTreeModule,
-    MatListModule
+    MatListModule,
+    MatDividerModule,
+    MatGridListModule,
+    VirtualScrollerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

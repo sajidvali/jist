@@ -1,0 +1,162 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 125,
+		"fields": {
+			"title": "Cardinality",
+			"question": "What is the cardinality of relationships?",
+			"lesson": "9",
+			"answer": "Cardinality is the possible number of times an entity participates in a relationship with other entities."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 126,
+		"fields": {
+			"title": "Cardinality types",
+			"question": "What are the various types of cardinality?",
+			"lesson": "9",
+			"answer": "There are three types of cardinality of a relationship: one-to-one, one-to-many, and many-to-many. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 127,
+		"fields": {
+			"title": "Cardinality example",
+			"question": "Explain the various types of cardinality with examples.",
+			"lesson": "9",
+			"answer": "An example of a one-to-one relationship would be, in a company's database, one employee is associated with only one employee ID or one national Identification number. An example of a one-to-many relationship would be one project associated with many departments. An example of many-to-many relationship would be many employees working on many tasks."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 128,
+		"fields": {
+			"title": "ACID",
+			"question": "What is ACID? ",
+			"lesson": "9",
+			"answer": "ACID is the acronym for Atomicity, Consistency, Isolation, and Durability which are a set of properties that guarantee the validity of the database in the event of errors, crashes, network failures, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 129,
+		"fields": {
+			"title": "Intergrity",
+			"question": "What is referential integrity?",
+			"lesson": "9",
+			"answer": "Referential integrity is a property of data stating references within it are valid. It requires every value of one attribute of a table to exist as a value of another attribute in a different (or the same) table."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 130,
+		"fields": {
+			"title": "Normalization",
+			"question": "What is database normalization used for?",
+			"lesson": "9",
+			"answer": "Database normalization is used to reduce data redundancy and improve data integrity in a relational database. It is carried out by restructuring the database in accordance with a series of normal forms such as the first normal form, second normal form, third normal form, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 131,
+		"fields": {
+			"title": "ORDBMS",
+			"question": "What is ORDBMS? ",
+			"lesson": "9",
+			"answer": "An ORDBMS or object-relational database management system is a DBMS based on an object-oriented database model. In ORDBMS, objects, classes, and inheritance are directly supported in database schemas and in the query language."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 132,
+		"fields": {
+			"title": "Query 1",
+			"question": "Can you write a query to get the scores of students of a class and sort from high to low? Assume some reasonable table name and field names.",
+			"lesson": "9",
+			"answer": "select * from StudentMarks order by score desc ;"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 133,
+		"fields": {
+			"title": "Query 2",
+			"question": "Suppose I have historical share price data of 3000 different companies stored in my database. Write a query that gives me the top 10 best (percentage wise) performing stocks this year.",
+			"lesson": "9",
+			"answer": "select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from ( (select * from stocks_dailydata) as A inner join (select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B where A.tickerSymbol=B.tockerSymbol ) order by pctCahnge desc  "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 134,
+		"fields": {
+			"title": "Query 3",
+			"question": "Suppose I do not want any stocks whose prices are below $10. How would you modify the query?",
+			"lesson": "9",
+			"answer": "select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from ( (select * from stocks_dailydata) as A inner join (select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B where A.tickerSymbol=B.tickerSymbol and B.closePrice > 10 ) order by pctCahnge desc "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 135,
+		"fields": {
+			"title": "Followup Question",
+			"question": "Why won't you first sort the stocks by price and filter only the stocks that are priced above $10? Will that not be faster?",
+			"lesson": "9",
+			"answer": "If most of the stocks in the database are expected to be below $10, sorting first by price will be faster. Especially, if this query is to be run very often, we can maintain a table of stocks that are priced above $10."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 136,
+		"fields": {
+			"title": "PL SQL",
+			"question": "Suppose you need to run a set of queries every day. Do you have to type them up one-by-one and run each time? ",
+			"lesson": "9",
+			"answer": "We could create a user-defined function or a stored procedure using PL / SQL with all the required queries in it and execute that whenver needed."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 137,
+		"fields": {
+			"title": "UI Front end",
+			"question": "Suppose the end users do not know SQL, how can they get some useful information from a database? You can explain it with an example and use the drawing board if you like.",
+			"lesson": "9",
+			"answer": "One can create a simpler user interface as a form and controls and the actual SQL queries can be programmed in the code to run in the background."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 138,
+		"fields": {
+			"title": "Concurrency",
+			"question": "Can you tell me a situation where concurrency control is needed? ",
+			"lesson": "9",
+			"answer": "If multiple users access a database and attempt to perform transactions concurrently, while updating the data, it may introduce inconsistency in the database. Therefore, certain concurrency control methods are used to ensure that every transaction leaves the database in a consistent state."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 139,
+		"fields": {
+			"title": "Conc. Control 2",
+			"question": "Can you name some of the concurrency control methods? ",
+			"lesson": "9",
+			"answer": "Some of the methods used for concurrency control are locking, serialization graph checking, timestamp ordering, commitment ordering, etc. or a combination of them, for example, Strong strict Two-phase locking or SS2PL which is a special case of Two-phase locking and commitment ordering methods."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 140,
+		"fields": {
+			"title": "Depth ok knowledge",
+			"question": "Can you name some of the concurrency control methods? ",
+			"lesson": "9",
+			"answer": "Look into your text book, search the internet for an answer. Rewrite the answer and explain to someone. Get his or her feedback and improve your answer and way of explaining."
+		}
+	}
+]

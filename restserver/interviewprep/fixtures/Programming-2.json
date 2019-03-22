@@ -1,0 +1,232 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 190,
+		"fields": {
+			"title": "OOP features",
+			"question": "What are the main features or characteristics of object-oriented programming? ",
+			"lesson": "13",
+			"answer": "The object oriented programming involves the concepts of objects, class, abstraction, encapsulation, inheritance, and polymorphism, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 191,
+		"fields": {
+			"title": "Object-Class",
+			"question": "What is an object and what is a class? Can you explain with an example?",
+			"lesson": "13",
+			"answer": "Objects are computer models of individual entities represented by their own attributes, data, and methods. A class is a template of similar objects from which individual objects are created. For example, for a company, 'employee' can be a class and individual employees such as John, Lisa, and Tom can be objects or instances created from the same 'employee' class such that each employee has certain common attributes and methods but his or her data would vary."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 192,
+		"fields": {
+			"title": "Inheritance",
+			"question": "What is Inheritance in O O P? What is its advantage?",
+			"lesson": "13",
+			"answer": "Inheritance is creating a derived class ( child class or subclass) from an existing parent class so that the variables and methods are automatically inherited. Therefore, we can reuse the codes of the parent class."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 193,
+		"fields": {
+			"title": "Child Class",
+			"question": "So, why do we need the child class at all, why not just use the parent class? Explain with an example.",
+			"lesson": "13",
+			"answer": "A child class, in addition to inheriting all of its parent's variables and functions, may have other variables and methods of its own. For example, one may derive a subclass driver from the employee class, who may have an additional accident_insurance function and driver's license information data which other employees such as the office clerks and secretaries are not required to have."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 194,
+		"fields": {
+			"title": "Abstraction",
+			"question": "What is abstraction and why is it useful?",
+			"lesson": "13",
+			"answer": "In O O P, abstraction is selecting essential data to show only the relevant features of an object. It helps to reduce programming complexity and effort."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 195,
+		"fields": {
+			"title": "Encapsulation",
+			"question": "What is encapsulation?",
+			"lesson": "13",
+			"answer": "Encapsulation is the inclusion of all the necessary resources (data and methods) within an object for the object to be completely defined and thus, publishing only its interfaces."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 196,
+		"fields": {
+			"title": "Polymorphism 1",
+			"question": "What is polymorphism?",
+			"lesson": "13",
+			"answer": "Polymorphism is a mechanism by which a function with the same name would perform different actions depending on the type of arguments passed to it."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 197,
+		"fields": {
+			"title": "Polymorphism 2",
+			"question": "Can you give an example of polymorphism?",
+			"lesson": "13",
+			"answer": "If we have to calculate the pay of an employee, we could have two separate ways of calculating it--one for permanent employees, who may have several benefits and another for temporary workers with no benefits. We can have a single method that does the salary calculation, but depending on the employee type, branches off to two different formulas for calculating the pay."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 198,
+		"fields": {
+			"title": "Overloading",
+			"question": "Are overriding and overloading the same thing?",
+			"lesson": "13",
+			"answer": "Overriding is substituting a method inherited from the parent class in the child class where the method name and the parameters remain the same. Whereas, overloading means using more than one method in a class with the same name but different parameters."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 199,
+		"fields": {
+			"title": "Method",
+			"question": "What is a method and how is it different from a function?",
+			"lesson": "13",
+			"answer": "A method is similar to a function but it belongs to a class. The object is implicitly passed to a method on which it operates, whereas in case of a function, all data are explicitly passed. A method can operate on the data that is contained within the class. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 200,
+		"fields": {
+			"title": "Setter Getter",
+			"question": "What is the purpose of setter and getter methods?",
+			"lesson": "13",
+			"answer": "A setter method is used to control the changes to the value of a variable. A getter method is used to retrieve the value of a private member variable."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 201,
+		"fields": {
+			"title": "Lambda",
+			"question": "What is a Lambda function / operator in Python?",
+			"lesson": "13",
+			"answer": "Lambda is a small function written in just one expression. It can take any number of arguments…."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 202,
+		"fields": {
+			"title": "Web Technology",
+			"question": "Do you have any experience with the Web technology and Web Apps?",
+			"lesson": "13",
+			"answer": "I have some experience. I have taken a course on web technology and I have developed a web App as a part of the course. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 203,
+		"fields": {
+			"title": "JavaScript",
+			"question": "What is JavaScript? Where is it used? How is it different from Java?",
+			"lesson": "13",
+			"answer": "JavaScript is a powerful object-oriented interpreted programming language used in WebPages and WebApp development to make them dynamic and interactive. Java is entirely different from JavaScript, it is a full-fledged, general-purpose, object-oriented programming language. It is compiled to create a bytecode and run on a Java virtual machine making it platform independent."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 204,
+		"fields": {
+			"title": "HTML - CSS",
+			"question": "What are H T M L and C S S?",
+			"lesson": "13",
+			"answer": "H T M L or Hypertext Markup Language is a standardized system of organizing and writing the contents to be displayed on the webpages. C S S or Cascading Stylesheets Language is used to control how a web page is presented. It helps to separate the presentation style from the content. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 205,
+		"fields": {
+			"title": "PHP",
+			"question": "What is P H P? Can I use P H P to get information from my database?",
+			"lesson": "13",
+			"answer": "P H P or Hypertext Preprocessor is a general-purpose scripting language that is especially suited for web development and can be embedded into H T M L. We can use P H P to connect to a database and fetch desired data from it using MySQLi."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 206,
+		"fields": {
+			"title": "Debugging",
+			"question": "Tell me if you ever had a major problem with your code and how you traced and solved it.",
+			"lesson": "13",
+			"answer": "Try to answer this question on your own'"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 207,
+		"fields": {
+			"title": "Coding vs. development",
+			"question": "What is the difference between software development and programming or coding?",
+			"lesson": "13",
+			"answer": "Software development involves the entire process of conceptual design, detailed design, data flow, algorithm development, programming, testing, documentation etc. Whereas, coding usually means converting the design Flowchart and Pseudo-code into detailed instructions using programming languages. So it is an essential part of the entire software development process. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 208,
+		"fields": {
+			"title": "multi-threading",
+			"question": "What is multi-Threading?",
+			"lesson": "13",
+			"answer": "Multi-threading is a type of program execution model that allows two or more parts or threads of the program to execute concurrently for better performance."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 209,
+		"fields": {
+			"title": "Java multi-threading",
+			"question": "How do you implement it for example in Java?",
+			"lesson": "13",
+			"answer": "In Java, multithreading can be achieved in two ways. In the first, we extend the thread class, override the run() method with our code that we wish to run, create new objects from the class and call start() . In the second way, we pass an implementation of the Runnable interface to the constructor of Thread and then call start()."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 210,
+		"fields": {
+			"title": "Multi Process",
+			"question": "What is the difference between multi-thread and multi-process?",
+			"lesson": "13",
+			"answer": "In Multi-thread, the threads use the same memory space and can run on the same processor. Whereas in multi-processes each process uses separate memory and it can take full advantage of multi-core processors."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 211,
+		"fields": {
+			"title": "Using GPU",
+			"question": "We have to often train our in-house Machine learning software overnight with huge amounts of stockmarket data. Do you have any idea how to use the GPUs for that?",
+			"lesson": "13",
+			"answer": "Do some research on why and how GPUs are used in many Machine learning programs and try to answer this on your own. Also, memorize the names of a few high-performance GPU producers such as N-Vidia, AMD etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 212,
+		"fields": {
+			"title": "Prrof of work",
+			"question": "Are you a member on GitHub? Do you have any code there that you can show us?",
+			"lesson": "13",
+			"answer": "Try to answer this question on your own"
+		}
+	}
+]

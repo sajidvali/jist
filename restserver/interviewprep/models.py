@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.dispatch import receiver
 from django.db.models.signals import post_save, pre_save
+from interviewprep import source
 
 # Create your models here.
 class InterviewProfile(models.Model):
@@ -76,8 +77,8 @@ class Question(models.Model):
         ordering = ('title',)
 
 def QuestionHandler(sender, instance, **kwargs):
-   instance.speechtext=instance.question
-   instance.visemes = "[1, 2, 3]"
+   instance.speechtext = source.generateSpeechText(instance.question)
+   instance.visemes = source.generateVisemes(instance.speechtext)
     
 
 pre_save.connect(QuestionHandler, sender=Question)

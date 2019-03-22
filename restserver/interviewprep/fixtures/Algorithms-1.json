@@ -1,0 +1,152 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 47,
+		"fields": {
+			"title": "Algorithm define",
+			"question": "What is an algorithm in computer science? What is the use of an algorithm?",
+			"lesson": "4",
+			"answer": "An algorithm is a finite sequence of well-defined instructions to accomplish a given task, that is to transform the given input into the output. To solve any computational problem, an appropriate algorithm or the step-by-step procedure is followed to arrive at the desired solution."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 48,
+		"fields": {
+			"title": "Algo examples",
+			"question": "Can you name a few algorithms you are familiar with and what kind of problems they can solve?",
+			"lesson": "4",
+			"answer": "Some examples of computer algorithms are Merge sort, Quick sort, Heap sort for sorting a given set of data, Dijkstra's algorithm for shortest path in a graph search, Fast Fourier Transform for transforming time-domain data into frequency domain, RSA algorithm for encryption and decryption, Gear algorithm for solving differential equations, Gradient descent algorithm for optimization and so on."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 49,
+		"fields": {
+			"title": "Algo applied",
+			"question": "Name one algorithm that you have actually used in a computer program. ",
+			"lesson": "4",
+			"answer": "I have used the generalized reduced gradient or GRG algorithm in my project to optimize the cost function. It is a generalization of the reduced gradient descent algorithm that allows non-linear constraints and arbitrary bounds on the variables."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 50,
+		"fields": {
+			"title": "Explain an Algo",
+			"question": "Can you explain the details of the algorithm you used, that is, how it works? Feel free to use the white-board or a sheet of paper.",
+			"lesson": "4",
+			"answer": "The Generalized reduced gradient algorithm is used to  find the minimum (or maximum) of a function of n independent variables given non-linear constraints and arbitrary lower and upper bounds on the variables. We partition the independent variables, follow essentially the same steps as the reduced gradient algorithm to find the minimum, that is to update independent variables in the direction of  the reduced gradient. But then, depending on the active constraints, we adjust the step size and apply a correction procedure to return to the surface where f(x)=0. Then repeat till the convergence criteria are met and we arrive at an optimum."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 51,
+		"fields": {
+			"title": "Complexity 1",
+			"question": "What is the complexity of an algorithm?  ",
+			"lesson": "4",
+			"answer": "The complexity of an algorithm is the amount of resources required for running it. In other words, it is an approximation of the number of steps necessary to execute an algorithm as a function of the input size."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 52,
+		"fields": {
+			"title": "Complexity types",
+			"question": "What are the types of complexities of an algorithm? Please explain.",
+			"lesson": "4",
+			"answer": "There are two types of complexities of an algorithm: time complexity and space complexity. Time complexity is a measure of the time it takes to run an algorithm. Space complexity is a measure of the amount of working storage or memory an algorithm needs."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 53,
+		"fields": {
+			"title": "suitable algo",
+			"question": "Given a computational problem, how would you go about  choosing the best algorithm?",
+			"lesson": "4",
+			"answer": "From all the well-known algorithms designed to solve the type of problem at hand, we have to choose the best based on the considerations of efficiency, accuracy, robustness, stability, memory usage, programming complexity, etc. Sometimes, one needs to even develop new or better algorithms to solve a special or new type of problem."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 54,
+		"fields": {
+			"title": "Sorting algo",
+			"question": "Can you name a few Sorting algorithms?",
+			"lesson": "4",
+			"answer": "Some of the commonly used sorting algorithms are Bubble sort, Heap sort, Insertion sort, Merge sort, Quick sort, Radix sort, Bucket sort, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 55,
+		"fields": {
+			"title": "Full sorting",
+			"question": "What is a k-sorted array and how would you fully sort it?",
+			"lesson": "4",
+			"answer": "A k-sorted array is a partially sorted array where each element is at the most k positions away from its fully sorted position. Given such a partially sorted array, we can use, for example, the insertion sort algorithm to sort it fully."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 56,
+		"fields": {
+			"title": "Search algo",
+			"question": "If we have to search for an element in a given array, what algorithms can we use?",
+			"lesson": "4",
+			"answer": "We can use search algorithms such as linear search, binary search, interpolation search, exponential search, Fibonacci search, and so on."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 57,
+		"fields": {
+			"title": "Fibonacci search",
+			"question": "What are the main differences between Linear search, Binary search, and Fibonacci search?",
+			"lesson": "4",
+			"answer": "Given an array, a linear search scans one item at a time and progresses linearly through the elements. This works for both sorted and unsorted arrays. Whereas, given a sorted array, a Binary search is more efficient. It works by comparing the middle element, and determining which half to search and repeatedly the search interval is halved. In Fibonacci search, we divide the array into two parts that have sizes that are consecutive Fibonacci numbers. Fibonacci search has the advantage that one only needs addition and subtraction operations to calculate the indices of the accessed array elements."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 58,
+		"fields": {
+			"title": "Greedy algo",
+			"question": "What is a greedy algorithm?",
+			"lesson": "4",
+			"answer": "A greedy algorithm is a strategy that makes the locally optimal choice at each stage with the intent of finding a global optimum."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 59,
+		"fields": {
+			"title": "Greedy Example",
+			"question": "Can you give an example of a couple of problems where a greedy algorithm can be used?",
+			"lesson": "4",
+			"answer": "A greedy algorithm can be used to solve the activity selection problem, where the goal is to pick the maximum number of activities that do not clash with each other. In currency change machines, a greedy algorithm can be used to give a minimum number of coins. A greedy algorithm can also be used in decision tree learning, as in the ID3 or Iterative Dichotomiser 3 algorithm, however it does not guarantee a globally optimal solution."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 60,
+		"fields": {
+			"title": "Traveling Salesman 1",
+			"question": "Can the greedy algorithm be used to solve the traveling salesman problem?",
+			"lesson": "4",
+			"answer": "We can use a simple greedy strategy like nearest neighbor algorithm, for example At each step of the journey, go to the nearest unvisited city It will give a quick solution which may not be the optimal solution."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 61,
+		"fields": {
+			"title": "Traveling Salesman 2",
+			"question": "What would be a good algorithm to solve the traveling salesman problem (or TSP)?",
+			"lesson": "4",
+			"answer": "There are several heuristic algorithms and exact algorithms for solving the travelling salesman problem. For example, Held-Karp algorithm, branch-and-bound algorithm, Christofides algorithm, Optimized Markov chain algorithms,  etc. There are many problems similar to the traveling salesman problem, for example, vehicle routing problem, Printed circuit layout optimization, etc."
+		}
+	}
+]

@@ -1,0 +1,172 @@
+[
+	{
+		"model": "interviewprep.question",
+		"pk": 157,
+		"fields": {
+			"title": "Reinforcement Exmpl",
+			"question": "Can you give a few examples of where Reinforcement learning is used? ",
+			"lesson": "11",
+			"answer": "Reinforcement learning is used in robotics, automated trading, gaming, etc. For example, Deep Mind's Alpha GO analyzed millions of games by playing against itself, learned the best strategies and finally beat the world champion in 2017."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 158,
+		"fields": {
+			"title": "Logistic regression",
+			"question": "What is the difference between linear regression and logistic regression?",
+			"lesson": "11",
+			"answer": "Linear regression is fitting a linear function through the data and then use it to predict the output given new input data. Logistic regression is a binary classification problem, that is we seek to find a binary answer ( or output) yes or no, one or zero, true or false, etc. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 159,
+		"fields": {
+			"title": "Example LR",
+			"question": "Give an example where logistic regression is used for classification.",
+			"lesson": "11",
+			"answer": "Logistic regression is commonly used for spam filtering. It can give a value that corresponds to the probability of an email belonging to a class, e.g. spam, social, promotion, etc."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 160,
+		"fields": {
+			"title": "under-fitting",
+			"question": "What is under-fitting? ",
+			"lesson": "11",
+			"answer": "If the model is too simple to capture the relationship between dependent and independent variables, it is called under-fitting. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 161,
+		"fields": {
+			"title": "under-fitting example",
+			"question": "Give an example of under-fitting? .",
+			"lesson": "11",
+			"answer": "An example of under-fitting would be if the data actually represents a non-linear or polynomial relationship and we try to fit a linear regression model, the prediction could be inaccurate. In fact, trying to fit a straight line to the measured data of the motion of a comet or asteroid, will not be sensible."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 162,
+		"fields": {
+			"title": "over-fitting",
+			"question": "What is over-fitting in machine learning ?",
+			"lesson": "11",
+			"answer": "In machine learning, over-fitting refers to making the model unnecessarily complex which may obscure the main features and objective. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 163,
+		"fields": {
+			"title": "Regularization",
+			"question": "How can you handle the over-fitting in machine learning?",
+			"lesson": "11",
+			"answer": "Regularization is a technique of introducing additional information or constraints in order to prevent over-fitting. A hyperparameter is a parameter used to control the amount of regularization in certain algorithms and its value is set before the learning process begins."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 164,
+		"fields": {
+			"title": "over-fitting Symptoms",
+			"question": "Suppose your model performs great on training data but poorly predicts new instances, what could be wrong? Can you name a few possible solutions?",
+			"lesson": "11",
+			"answer": "This can happen in case of over-fitting for example. We need to use more training data, reduce the number of parameters or features, use a hyperparameter for regularization and tune it. For example, given N measured X and Y data one could fit an N minus 1 order polynomials through them but that may be over-fitting, possibly just a linear model better represents the behavior."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 165,
+		"fields": {
+			"title": "Dropout regularization",
+			"question": "How does the dropout for regularization work in a Deep Neural Network?",
+			"lesson": "11",
+			"answer": "If a deep neural network is trained with a few sample data, it may cause over-fitting. Large weights are usually a sign of over-fitting. Probabilistically dropping out a few nodes and its connections in the network together with weight constraints is an effective method of regularization."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 166,
+		"fields": {
+			"title": "SVM",
+			"question": "What is a support vector machine (or S V M) ?",
+			"lesson": "11",
+			"answer": "A support-vector machine constructs a hyperplane, which can be used for classification, regression, or other tasks like outliers detection"
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 167,
+		"fields": {
+			"title": "Depp reinforcement",
+			"question": "What is deep reinforcement learning?",
+			"lesson": "11",
+			"answer": "Deep reinforcement learning is a combination of reinforcement learning and deep learning. This field of research has been able to solve a wide range of complex decision-making tasks that were previously out of reach for a machine."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 168,
+		"fields": {
+			"title": "model-based learning",
+			"question": "What is the main conceptual difference between instance-based learning and model-based learning?",
+			"lesson": "11",
+			"answer": "Instance-based learning compares new data points to known data points. Whereas, model-based learning builds a predictive model by detecting patterns in the training data."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 169,
+		"fields": {
+			"title": "Boltzmann machine",
+			"question": "What is a restricted Boltzmann Machine (or R B M)?",
+			"lesson": "11",
+			"answer": "A restricted Boltzmann machine is a generative stochastic neural network that can learn a probability distribution over its set of inputs."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 170,
+		"fields": {
+			"title": "GAN",
+			"question": "What are Generative adversarial networks or (G A N)?",
+			"lesson": "11",
+			"answer": "Generative adversarial networks are a class of artificial intelligence algorithms used in unsupervised machine learning, implemented by a system of two neural networks contesting with each other in a zero-sum game framework. "
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 171,
+		"fields": {
+			"title": "Map Reduce",
+			"question": "What is Map Reduce technique and when is it used?",
+			"lesson": "11",
+			"answer": "Map Reduce is a programming model and an associated implementation for processing and generating data sets with a parallel, distributed algorithm on a cluster. It is used for processing very large data."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 172,
+		"fields": {
+			"title": "ML algorithms",
+			"question": "Can you name a few commonly used Machine learning algorithms?",
+			"lesson": "11",
+			"answer": "Some commonly used machine learning algorithms are Linear and Polynomial Regression, Logistic Regression, k-Nearest Neighbors, Support Vector Machines, Decision Trees, Random Forests, and Ensemble methods."
+		}
+	},
+	{
+		"model": "interviewprep.question",
+		"pk": 173,
+		"fields": {
+			"title": "Application ideas",
+			"question": "Can you come up with one new application of A I and Machine Learning? Something that is not a common application yet.",
+			"lesson": "11",
+			"answer": "I believe, AI can be used to help people get better at daily tasks. We constantly try to improve our efficiency in doing a few things, AI can track our activities and suggest how we can improve. For example, if someone often makes a particular type of math mistakes while doing the homework, it can help him or her by identifying some of the weakest points, their main causes and can suggest how to improve by bringing up the best examples from some of the teachers or students."
+		}
+	}
+]

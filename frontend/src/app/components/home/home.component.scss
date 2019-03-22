@@ -1,0 +1,58 @@
+
+.headtext {
+   position:relative;
+   margin: 0 auto;
+   text-align: center;
+   animation: panfrombottom 500ms ease-out forwards;
+   margin-bottom:50px;
+}
+
+ .intro {
+    justify-content: center;
+ }
+
+ button span {
+    margin-left:10px;
+ }
+
+@keyframes panfromtop {
+   0% { top: -50px; opacity: 0;}
+   100% { top: 0px; opacity: 1.0}
+}
+
+@keyframes panfrombottom {
+   0% { top: 50px; opacity: 0;}
+   100% { top: 0px; opacity: 1.0}
+}
+
+ .avatar {
+    position:relative;
+    margin: 0 10px;
+    height: auto;
+    width:90%;
+    max-width:785px;
+    text-align: center;
+    animation: panfromtop 500ms ease-out forwards;
+ }
+
+ .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto;
+ }
+
+ mat-card-header {
+    justify-content: center;
+    text-align: center;
+ }
+
+ .courses mat-icon {
+    font-size: 2em;
+ }
+
+
+
+
+

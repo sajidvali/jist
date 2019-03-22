@@ -1,0 +1,38 @@
+.testimonial-container {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+virtual-scroller {
+   height:450px;
+   overflow: hidden !important;
+   justify-content: center !important;
+   
+ }
+ 
+testimonial {
+   display: block;
+   width: 360px;
+   height: 100%;
+ }
+
+@media screen and (min-width: 1300px) {
+   virtual-scroller {
+      width:1080px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   virtual-scroller {
+      width:720px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   virtual-scroller {
+      width:360px;
+   }
+}

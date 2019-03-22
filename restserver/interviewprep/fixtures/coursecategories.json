@@ -1,0 +1,16 @@
+[
+    {
+       "model": "interviewprep.coursecategory",
+       "pk": 1,
+       "fields": {
+          "title": "General"
+       }
+    },
+    {
+       "model": "interviewprep.coursecategory",
+       "pk": 2,
+       "fields": {
+          "title": "Technical"
+       }
+    }
+ ]

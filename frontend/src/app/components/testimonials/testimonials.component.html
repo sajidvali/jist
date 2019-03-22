@@ -1,0 +1,11 @@
+<div class="testimonial-container">
+   <button mat-icon-button style="margin-left:10px;" (click)="scrollnext(-1)">
+      <mat-icon>arrow_back_ios</mat-icon>
+   </button>
+   <virtual-scroller #scroll [items]="testimonials" horizontal="true" modifyOverflowStyleOfParentScroll="false">
+      <testimonial *ngFor="let testimonial of scroll.viewPortItems;let i=index;" [data]="testimonial"></testimonial>
+   </virtual-scroller>
+   <button mat-icon-button style="margin-right:10px;" (click)="scrollnext(1)">
+      <mat-icon>arrow_forward_ios</mat-icon>
+   </button>
+</div>

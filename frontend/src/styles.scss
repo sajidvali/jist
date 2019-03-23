@@ -4,7 +4,8 @@
 @include mat-core();
 @import 'theme.scss';
 @include angular-material-theme($interview-app-theme);
-
+@import '~@ngx-share/button/themes/default/default-theme';
+@import '~@ngx-share/button/themes/material/material-dark-theme';
 
 body {
     width:100%;
@@ -13,4 +14,8 @@ body {
     margin:0;
     box-sizing: border-box;
     font-family: Roboto, Arial, sans-serif;
+}
+
+.sb-wrapper {
+   color: white !important;
 }

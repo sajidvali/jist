@@ -66,6 +66,18 @@
       <router-outlet></router-outlet>
    </mat-sidenav-content>
 </mat-sidenav-container>
-<mat-toolbar>
-   FOOTER
+<mat-toolbar class="footer">
+   <mat-toolbar-row>
+      <button mat-button [routerLink]="['/contact']">
+         <mat-icon>email</mat-icon>
+         <span style="margin-left:10px">CONTACT US</span>
+      </button>
+   </mat-toolbar-row>
+   <mat-toolbar-row>
+      <!--https://murhafsousli.github.io/ngx-sharebuttons/#/share-buttons-component-->
+      <share-buttons [theme]="material-dark"
+         [include]="['facebook','twitter','linkedin','pinterest','whatsapp','reddit','tumblr','telegram','messenger','sms','email']"
+         [show]="5" [url]="'https://grammarexpert.ml/'" [autoSetMeta]="false"></share-buttons>
+   </mat-toolbar-row>
+
 </mat-toolbar>

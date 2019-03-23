@@ -1,4 +1,9 @@
 
+@import 'src/theme.scss';
+
+$primary: map-get($interview-app-theme, primary);
+$accent: map-get($interview-app-theme, accent);
+
 .headtext {
    position:relative;
    margin: 0 auto;
@@ -9,6 +14,8 @@
 
  .intro {
     justify-content: center;
+    text-align:center; 
+    margin:0 auto
  }
 
  button span {
@@ -36,11 +43,18 @@
  }
 
  .courses {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px auto;
+    background-color: mat-color($primary, 50);
+ }
+
+ .courses h1 {
+    padding-top:50px;
+ }
+
+ .separator {
+    border-bottom: 3px solid grey;
+    width:100px;
+    height:5px;
+    margin:0 auto;
  }
 
  mat-card-header {
@@ -51,6 +65,22 @@
  .courses mat-icon {
     font-size: 2em;
  }
+
+ .leadtext {
+   font-weight:300; 
+   max-width:700px;
+   margin: 0 auto;
+   padding-top:20px;
+ }
+
+ .categories {
+    padding:50px 0 50px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: top;
+ }
+
 
 
 

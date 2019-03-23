@@ -12,6 +12,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { VirtualScrollerModule } from 'ngx-virtual-scroller';
+import { LoggedinHomeComponent } from './components/loggedin-home/loggedin-home.component';
+import { ShareButtonsModule } from '@ngx-share/buttons';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { VirtualScrollerModule } from 'ngx-virtual-scroller';
     HomeComponent,
     AboutComponent,
     TestimonialComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    LoggedinHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { VirtualScrollerModule } from 'ngx-virtual-scroller';
     MatDividerModule,
     MatGridListModule,
     VirtualScrollerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ShareButtonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

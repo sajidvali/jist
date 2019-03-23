@@ -20,3 +20,15 @@
       flex-direction: column;
       
 }
+
+.footer {
+   background-color: #333333;
+   color:white;
+   padding: 15px;
+}
+
+
+
+.footer mat-toolbar-row {
+   justify-content: center;
+}

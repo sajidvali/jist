@@ -3,29 +3,41 @@
 $primary: map-get($interview-app-theme, primary);
    
 .testimonial-header {
-   height: 100px;
-   background-color: mat-color($primary);
-   justify-content: center;
+    height: 90px;
+    background-color: #3f51b5;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
 }
 
 .testimonial-image {
-   width:150px;
-   height:150px;
-   border-radius: 75px !important;
+   width: 140px;
+   height: 140px;
+   border-radius: 70px !important;
    border: 3px solid white;
-   position:relative;
-   top:25px;
    text-align: center;
-   padding:0;
-   margin:0;
+   padding: 0;
+   margin: 0;
 }
 
 .testimonial {
-   width:300px;
-   height:350px;
-   margin:20px;
+   width: 300px;
+   height: 400px;
+   margin: 20px;
    justify-content: center;
+   padding: 0;
+   border-radius: 15px;
 }
+
+.testimonial mat-card-title {
+   margin-top:43px;
+}
+
+.testimonial-content {
+   margin-bottom: 0;
+   padding: 0 10px 10px 10px;
+}
+
 
 .flip {
    transform: scale(-1);

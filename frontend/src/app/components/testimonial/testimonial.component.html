@@ -3,12 +3,13 @@
          <img class="testimonial-image" mat-card-image src="{{data.image}}" alt="picture of user">
    </div>
    
-   <mat-card-title style="margin-top:70px;">{{data.name}}</mat-card-title>
+   <mat-card-title>{{data.name}}</mat-card-title>
    <mat-card-subtitle>{{data.affiliation}}</mat-card-subtitle>
    <mat-card-content class="testimonial-content">
-      <p class="mat-h4">
+      <p class="mat-h4" matTooltip="{{formattedTooltip(data.text)}}">
          <mat-icon class="flip">format_quote</mat-icon>
-         {{data.text}}
+         
+         {{formattedText(data.text)}}
       </p>
    </mat-card-content>
 </mat-card>

@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { of, Observable, from, BehaviorSubject } from 'rxjs';
+import { of, Observable, BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { config } from 'src/app/config';
 import { catchError, mapTo, tap } from 'rxjs/operators';
-import { User } from '../models/user';
 import { Tokens } from '../models/tokens';
 import { SocialUser } from 'angularx-social-login';
 import { AuthService as SocialAuthService } from 'angularx-social-login';

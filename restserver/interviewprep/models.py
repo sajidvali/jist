@@ -38,6 +38,7 @@ class Course(models.Model):
    users = models.ManyToManyField(User, blank=True)
    canpeek = models.BooleanField(default=True)
    cost = models.FloatField(default=0)
+   image = models.URLField(max_length=200, blank=True)
    category =  models.ForeignKey(CourseCategory, on_delete=models.DO_NOTHING, blank=True)
 
    def __str__(self):
@@ -51,6 +52,7 @@ class Lesson(models.Model):
    title = models.CharField(max_length=50)
    description = models.CharField(max_length=1000)
    courses = models.ManyToManyField(Course, blank=True)
+   image = models.URLField(max_length=200, blank=True)
    paid = models.BooleanField(default=False)
 
    def __str__(self):

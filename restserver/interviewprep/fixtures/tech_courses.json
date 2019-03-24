@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
            "title": "Computer Science",
-           "description": "This course trains you to handle interview questions gracefully in all major aspects of Computer Science startign from core to advanced skills in demand today.",
+           "description": "This course trains you to handle interview questions gracefully in all major aspects of Computer Science starting from core to advanced skills in demand today.",
            "category":"2"
         }
      },
@@ -13,7 +13,7 @@
         "pk": 2,
         "fields": {
            "title": "Information Technology",
-           "description": "This course trains you to handle interview questions gracefully in all major aspects of Computer Science startign from core to advanced skills in demand today.",
+           "description": "This course trains you to handle interview questions gracefully in all major aspects of Information Technology from core to advanced skills in demand today.",
            "category":"2"
         }
      }

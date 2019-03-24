@@ -1,0 +1,24 @@
+<mat-card class="course">
+   <mat-card-header>
+      <button mat-icon-button mat-card-avatar *ngIf="subscribed">
+         <mat-icon class="subscribed">check_circle</mat-icon>
+      </button>
+      <button mat-icon-button mat-card-avatar *ngIf="!subscribed" (click)="subscribe()">
+         <mat-icon class="unsubscribed">add_circle_outline</mat-icon>
+      </button>
+      <span class="cost">{{course.cost}}</span>
+      <mat-card-title>{{course.title}}</mat-card-title>
+      <mat-card-subtitle>{{category}}</mat-card-subtitle>
+   </mat-card-header>
+
+   <mat-card-content>
+      <img src="{{course.image}}" alt="{{course.title}}">
+      <div class="description">
+         <p>{{course.description}}</p>
+         <div class="center">
+            <button *ngIf="subscribed" mat-raised-button color="accent">Go to Course</button>
+            <button *ngIf="!subscribed" mat-raised-button disabled={{!course.canpeek}}>Look Inside</button>
+         </div>
+      </div>
+   </mat-card-content>
+</mat-card>

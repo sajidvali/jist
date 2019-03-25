@@ -16,8 +16,10 @@
       <div class="description">
          <p>{{course.description}}</p>
          <div class="center">
-            <button *ngIf="subscribed" mat-raised-button color="accent">Go to Course</button>
-            <button *ngIf="!subscribed" mat-raised-button disabled={{!course.canpeek}}>Look Inside</button>
+            <a *ngIf="subscribed" mat-raised-button color="accent" 
+            [routerLink]="['course']"  [state]="{course: course, category:category, subscribed:subscribed}">Go to Course</a>
+            <a *ngIf="!subscribed" mat-raised-button disabled={{!course.canpeek}}
+            [routerLink]="['course']"  [state]="{course: course, category:category, subscribed:subscribed}">Look Inside</a>
          </div>
       </div>
    </mat-card-content>

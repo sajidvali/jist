@@ -17,6 +17,22 @@ from .models import InterviewProfile, CourseCategory, Course, Lesson, Question, 
 from api.models import Profile
 
 
+class ListGetLessonsView(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = LessonSerializer
+
+    def get_queryset(self):
+       courseid = self.kwargs['courseid']
+       user = self.request.user
+       print(user)
+       course = Course.objects.get(pk=courseid, users=user)
+       print(course)
+       if course:
+         return Lesson.objects.filter(courses=course)
+       
+
+
+
 class ListCoursesView(generics.ListAPIView):
     permission_classes = (IsAuthenticated,)
     queryset = Course.objects.all()
@@ -34,8 +50,6 @@ class ListSubscribedCoursesView(generics.ListAPIView):
     serializer_class = CourseIdSerializer
 
     def get_queryset(self):
-       print(self.request.user)
-       print(self.request.user.course_set.all())
        return self.request.user.course_set.all()
 
 
@@ -61,7 +75,7 @@ class ProfileView(APIView):
 
     def get(self, request):
 
-        profile = Course.objects.get(pk=request.user.id)
+        profile = Profile.objects.get(pk=request.user.id)
         print(ProfileSerializer(profile).data)
         try:
             interviewprofile = InterviewProfile.objects.get(pk=request.user.id)

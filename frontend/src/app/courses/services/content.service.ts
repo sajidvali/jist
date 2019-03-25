@@ -5,6 +5,7 @@ import { Course } from '../models/course';
 import { Observable, of } from 'rxjs';
 import { Category } from '../models/category';
 import { catchError, mapTo, map } from 'rxjs/operators';
+import { Lesson } from '../models/lesson';
 
 @Injectable({
    providedIn: 'root'
@@ -22,6 +23,17 @@ export class ContentService {
    getMyCourses(): Observable<Array<number>> {
       return this.http.get<Array<number>>(`${config.apiUrl}/interviewprep/mycourses/`).pipe(
          map(res => res.map(item => item["id"]))
+      );
+   }
+
+   getLessons(courseid:number, image:string): Observable<Array<Lesson>> {
+      return this.http.get<Array<Lesson>>(`${config.apiUrl}/interviewprep/lessons/${courseid}/`).pipe(
+         map(res=>res.map(item => {
+            if(!item["image"] || item["image"]==''){
+               item['image'] = image;
+               return item;
+            }
+         }))
       );
    }
 

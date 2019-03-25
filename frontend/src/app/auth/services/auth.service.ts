@@ -21,16 +21,20 @@ export class AuthService {
       //this way we need not store our user in localstorage as the social login provider would be doing that.
       this.socialAuthService.authState.subscribe((user) => {
          if (user) {
+            console.log("constructor aut state called");
             this.http.post<any>(`${config.apiUrl}/api/token/`, { 'idtoken': user.idToken, 'provider': user.provider })
             .subscribe(
                tokens=>this.doLoginUser(user, tokens),   //success
                error=>console.log(error),                //error
-               ()=>this.router.navigate(['/'])           //complete
+               //()=>this.router.navigate([this.router.url])           //complete
             )
          }
       });
       // here we ensure that our tokens are valid, else we logout and have user authenticate again
-      if (this.isLoggedIn()) this.refreshToken();
+      if (this.isLoggedIn()) {
+         console.log("calling refresh token from constructor");
+         this.refreshToken();
+      }
    }
 
    // get the current user. We return the behavior subject as observable

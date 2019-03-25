@@ -1,3 +1,4 @@
-<p>
-  lesson-list works!
-</p>
+<div class="lessons" >
+   <lesson-tile *ngFor="let lesson of FilteredLessons().slice(from, to)" [lesson]="lesson" [subscribed]="subscribed">
+   </lesson-tile>
+</div>

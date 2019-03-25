@@ -21,4 +21,4 @@ $interview-app-theme: mat-light-theme($interview-app-primary, $interview-app-acc
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($interview-app-theme);
+@include angular-material-theme($interview-app-theme); 

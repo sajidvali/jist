@@ -1,7 +1,7 @@
 [
     {
         "model": "interviewprep.course",
-        "pk": 1,
+        "pk": 3,
         "fields": {
            "title": "Human Resources",
            "description": "This course trains you to handle interview questions gracefully in all major aspects of Human Resources starting from core to advanced skills in demand today.",

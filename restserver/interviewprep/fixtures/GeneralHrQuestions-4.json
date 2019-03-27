@@ -5,7 +5,7 @@
 		"fields": {
 			"title": "Motivation",
 			"question": "What motivates you to work? What are you passionate about?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I am always curious about new technologies and excited about applying them to create new products. Working with full dedication towards a goal, making progress every day, and the desire to meet the target and the deadline always keep me motivated."
 		}
 	},
@@ -15,7 +15,7 @@
 		"fields": {
 			"title": "Demotivation",
 			"question": "What de-motivates or de-moralizes you? What bores you? Or What discourages you from giving your 100%?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I have a highly positive outlook on life and generally, do not get demotivated. I find there are many things to look forward to in my life and work. If one wants to see positive things, one can always find them. If for some reason, the working environment is highly negative, I will surely find the strength to help improve the environment itself. I will not give up."
 		}
 	},
@@ -25,7 +25,7 @@
 		"fields": {
 			"title": "Handling failures",
 			"question": "How do you handle failures? Or What do you do when you do not get success?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I believe failures are part of any useful or innovative work. I have read the biographies of many successful people and they all had many failures that taught them valuable lessons. If I have any failure, I take a step back, think about it from a broader perspective, investigate what caused it, and rectify it immediately. I also think about how to prevent similar failures, make notes, and implement it in the future."
 		}
 	},
@@ -35,7 +35,7 @@
 		"fields": {
 			"title": "Taking responsibility",
 			"question": "Can you talk about a time when you failed? And then what did you do?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "During my training, I had made a mistake somewhere and the results were not as we expected. I spent much time investigating it and finally, I found that the data I was given was completely outdated and even wrong. As we all know, Garbage in garbage out. So, I requested the most recent data, and everything worked fine. I learned that I should always verify the correctness of the data. I wrote it in my diary and made it a habit. "
 		}
 	},
@@ -45,7 +45,7 @@
 		"fields": {
 			"title": "Role models",
 			"question": "Who are your role models?, Whose biographies have you read? or What kind of people inspire you?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I have several role models. I would say, one of my Professors. Besides that, I have been inspired by the lives of Nicola Tesla, Grace Hopper, Mary Kenneth Keller, Bill Gates, Steve Wozniak, Narayana Murthy, Elon Musk and many others. "
 		}
 	},
@@ -55,7 +55,7 @@
 		"fields": {
 			"title": "Verify the answer",
 			"question": "What did you learn from the life of one of your role models?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "The most important thing I have learned from the life of Bill Gates is that we have to foresee technological revolutions or innovations that will have a large-scale impact on society. Then get into it and be a part of it and contribute to it instead of being just a passive observer or a user."
 		}
 	},
@@ -65,7 +65,7 @@
 		"fields": {
 			"title": "self-motivation",
 			"question": "Was there a time when your plan went wrong? and what did you do?  Or Give me an example of something you have done in a planned and organized manner but you had to change your plan.",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "When I was doing my undergrad project, I had planned it very well, and I was making good progress. Then a paper was published by a team from the UK which essentially had what I was planning to do. So, instead of changing my project for which we did not have enough time left, I looked at what they had done. I found a more efficient way of doing it and worked long hours for five weeks to implement that in my project. Thus, I could do something new as well as finish my project on time."
 		}
 	},
@@ -75,7 +75,7 @@
 		"fields": {
 			"title": "Dedication 1",
 			"question": "Suppose, a customer is unhappy and your manager wants you to handle the problem in two days, and you have plans for holidays, what will you do?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "The customer and the work certainly come first. I will discuss with the manager the details to see if it can be done in two days. If yes, I will do it even if I have to postpone my holidays. If it seems impossible to do in two days, I will ask the manager to give me the support of another team member or negotiate the time with the customer. In any case, I will get it done and make the customer satisfied."
 		}
 	},
@@ -85,7 +85,7 @@
 		"fields": {
 			"title": "Quick learner 1",
 			"question": "Suppose, some part of your work is very difficult, and you do not know how to do it. What will you do?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I will immediately get deeper into the problem to see what I need to learn. If I can learn something quickly from various sources and feel that I can do it in time, I will do it. But if I think, a colleague, the team leader or an internal expert can help me, I will seek the minimum help early enough so that the work is done in time."
 		}
 	},
@@ -95,7 +95,7 @@
 		"fields": {
 			"title": "Confidence 1",
 			"question": "So, you are not confident that you can do everything alone.",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I like new challenges, that gives me opportunities to learn and apply. My fundamentals are strong and I am confident that I can learn anything and solve any problem. However, realistically, sometimes it is better and quicker to get help from someone who is more knowledgeable and experienced. I can imagine, in some rare cases, we may even need the expertise of another team."
 		}
 	},
@@ -105,7 +105,7 @@
 		"fields": {
 			"title": "New Challenges 1",
 			"question": "Can you tell us about a time when you were given a task that was new to you and how you handled that?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "During my training at TATA (name of the organization), I was assigned to a team that was developing a system for recording and analyzing data related to heavy-vehicle drivers' driving habits. It was completely new to me. Fortunately, one experienced engineer explained the essentials to me for 2 hours and I understood the project fairly well, well enough to get started. I like learning about new domains and exploring how my field and knowledge can help in other domains. In fact, I like difficult inter-disciplinary work."
 		}
 	},
@@ -115,7 +115,7 @@
 		"fields": {
 			"title": "Unexpected questions",
 			"question": "Are you applying for any other jobs?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I have applied to a few other jobs that seem to match my qualifications and interest. "
 		}
 	},
@@ -125,7 +125,7 @@
 		"fields": {
 			"title": "Why our company",
 			"question": "There are so many companies in this field, why would you choose to work for our company?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "This particular position in your company seems to match very well. It seems to require software design, programming, and interacting with various departments such as software testing. So it would give me the opportunity to build a broad-based knowledge and would be ideal for my interests."
 		}
 	},
@@ -135,7 +135,7 @@
 		"fields": {
 			"title": "Unexpected questions 2",
 			"question": "What can you do for our company?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "I know that your company is working on solving a problem on … I believe, with my knowledge, experience and out of the box thinking, I can help solve this problem."
 		}
 	},
@@ -145,7 +145,7 @@
 		"fields": {
 			"title": "Company knowledge 2",
 			"question": "What do you know about our company's current focus? ",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "To the best of my knowledge, your company is focusing on customized solutions, planning to start an R&D division in Asia, and is planning acquisitions to expand its business in IoT, robotics, and factory automation."
 		}
 	},
@@ -155,7 +155,7 @@
 		"fields": {
 			"title": "overtime",
 			"question": "Our new business development department often needs help from the technical experts and you will have to work closely with them. You may even have to travel with them to various potential customers. Are you willing to do that?",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "Yes. I'd like to learn various aspects of the business at every opportunity and help the company in every way. Meeting customers and supporting the sales team would broaden my experience. If I get this position, I will be a part of this company. So naturally, I would love to help the company whenever and wherever needed. "
 		}
 	},
@@ -165,7 +165,7 @@
 		"fields": {
 			"title": "Ending",
 			"question": "OK. Good. We will need a couple of days to make our final decision and let you know.",
-			"lesson": "4",
+			"lesson": "17",
 			"answer": "Thank you. I look forward to hearing from you."
 		}
 	}

@@ -13,8 +13,8 @@
          <mat-form-field class="formfield">
             <mat-label>Category</mat-label>
             <mat-select [(value)]="selectedCategory">
-               <mat-option value="0" selected>All</mat-option>
-               <mat-option *ngFor="let category of categories" [value]="category.id">
+               <mat-option value="All" selected>All</mat-option>
+               <mat-option *ngFor="let category of categories" [value]="category.title">
                   {{category.title}}
                </mat-option>
             </mat-select>
@@ -27,7 +27,7 @@
          </mat-paginator>
       </div>
    </div>
-   <course-list [categories]="categories" [from]="pageindex*pagesize" [to]="(pageindex+1)*pagesize"
+   <course-list [from]="pageindex*pagesize" [to]="(pageindex+1)*pagesize"
       [search]="searchText" [category]=[selectedCategory] [onlymycourses]="onlymycourses" [courses]="courses">
 
    </course-list>

@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" *ngIf="init==2">
    <div class="toppart">
       <div class="courseimage" [style.background-image]="image"></div>
       <div class="gradient"></div>
       <div class="heading">
          <mat-icon class="mainicon">assignment</mat-icon>
          <h1 class='mat-display-1'>{{course.title}}</h1>
-         <h3 class='mat-h1'>{{category}}</h3>
+         <h3 class='mat-h1'>{{course.category}}</h3>
          <div class='filter-container'>
                <mat-form-field class="formfield">
                   <input type="search" matInput placeholder="Search" [(ngModel)]="searchText">
@@ -30,8 +30,8 @@
       </div>
       
    </div>
-   <lesson-list [from]="pageindex*pagesize" [to]="(pageindex+1)*pagesize" [search]="searchText" [display]="display"
-      [lessons]="lessons">
-   </lesson-list>
+   <lesson-list [course]="course" [from]="pageindex*pagesize" [to]="(pageindex+1)*pagesize" [search]="searchText" [display]="display"
+      [lessons]="lessons" [lessonattempts]="lessonattempts" *ngIf = "init==2">
+   </lesson-list >
 
 </div>

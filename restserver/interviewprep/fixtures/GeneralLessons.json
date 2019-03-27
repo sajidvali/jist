@@ -1,47 +1,47 @@
 [
 	{
 		"model": "interviewprep.lesson",
-		"pk": 1,
+		"pk": 14,
 		"fields": {
 			"title": "Human Resource 1",
 			"description": "Human Resource Questions",
-			"courses": [1]
+			"courses": [3]
 		}
 	},
 	{
 		"model": "interviewprep.lesson",
-		"pk": 2,
+		"pk": 15,
 		"fields": {
 			"title": "Human Resource 2",
 			"description": "Human Resource Questions",
-			"courses": [1]
+			"courses": [3]
 		}
 	},
 	{
 		"model": "interviewprep.lesson",
-		"pk": 3,
+		"pk": 16,
 		"fields": {
 			"title": "Human Resource 3",
 			"description": "Human Resource Questions",
-			"courses": [1]
+			"courses": [3]
 		}
 	},
 	{
 		"model": "interviewprep.lesson",
-		"pk": 4,
+		"pk": 17,
 		"fields": {
 			"title": "Human Resource 4",
 			"description": "Human Resource Questions",
-			"courses": [1]
+			"courses": [3]
 		}
 	},
 	{
 		"model": "interviewprep.lesson",
-		"pk": 5,
+		"pk": 18,
 		"fields": {
 			"title": "Human Resource 5",
 			"description": "Human Resource Questions",
-			"courses": [1]
+			"courses": [3]
 		}
 	}
 ]

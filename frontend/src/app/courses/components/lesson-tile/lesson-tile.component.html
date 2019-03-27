@@ -5,19 +5,19 @@
          </button>
          <button mat-icon-button mat-card-avatar *ngIf="!subscribed" (click)="subscribe()">
             <mat-icon class="unsubscribed">add_circle_outline</mat-icon>
-         </button>
-         <span class="cost">{{course.cost}}</span> -->
+         </button>-->
+         <span class="progress">{{lessonattempt.questions}}/{{lesson.questionCount}}</span> 
          <mat-card-title>{{lesson.title}}</mat-card-title>
          <!-- <mat-card-subtitle>{{category}}</mat-card-subtitle> -->
       </mat-card-header>
    
       <mat-card-content>
-         <img src="{{lesson.image}}" alt="{{lesson.title}}">
+         <img [src]="lessonImage" alt="{{lesson.title}}">
          <div class="description">
             <p>{{lesson.description}}</p>
             <div class="center">
-               <a mat-raised-button color="accent" disabled={{lesson.paid}}
-               [routerLink]="['lesson']"  [state]="{lesson: lesson}">Go to Lesson</a>
+               <a mat-raised-button color="accent" 
+               [routerLink]="[lesson.id]"  [state]="{lesson: lesson, course: course}">Go to Lesson</a>
             </div>
          </div>
       </mat-card-content>

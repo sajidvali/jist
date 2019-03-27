@@ -48,7 +48,7 @@ mat-checkbox.formfield {
    background-repeat: no-repeat;
    background-size: cover;
    position:absolute;
-   height:340px;
+   height:490px;
    width:100%;
    top:0px;
    left:0px;
@@ -57,11 +57,11 @@ mat-checkbox.formfield {
 
 .gradient {
    width:100%;
-   height:350px;
+   height:500px;
    position:absolute;
    top:0px;
    left:0px;
-   background-image: linear-gradient(to bottom, rgba(0,0,0,0), mat-color($background, 'background') 90%)
+   background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.5), mat-color($background, 'background') 90%)
 }
 
 .toppart {

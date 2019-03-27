@@ -5,7 +5,7 @@
 		"fields": {
 			"title": "About yourself 1",
 			"question": "Tell me a little about yourself. ",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I'm Anita Roy. I'm from Boston where I did my schooling. Since my childhood, I was very interested in computers. So I chose to study Computer Science and Engineering at the North-Eastern University. I am a good student. I like all subjects but Artificial Intelligence and Machine Learning are my favorite subjects. I am creative and love to solve challenging technical problems. I hope to work for an innovative company such as yours where I get the opportunity to learn new technologies and implement them to create products for the benefit of the company and society."
 		}
 	},
@@ -15,7 +15,7 @@
 		"fields": {
 			"title": "Follow up question 1",
 			"question": "You said you are creative. Can you give us an example when you have been creative?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I did a project using AI and machine learning to solve the files and documents organization problem (or the actual problem you solved). After searching the literature, I found that all current methods for solving this problem were very slow or inaccurate. So, I thought for many weeks, tried several ideas and came up with a new algorithm, which can solve the problem 3 times faster and with 98% accuracy."
 		}
 	},
@@ -25,7 +25,7 @@
 		"fields": {
 			"title": "Academic performance 1",
 			"question": "You said you are a good student, but we see that your marks are not all that great. Can you explain why?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I focused more on learning, especially my favorite subjects and implementing what I learn into something practical. I did not prepare well for the examinations. I believe, it is more important for me to create something new with what I learn than to score high in the examinations. I have put in twice the time and effort normally needed to do my undergrad project. My guide is very happy with the work I have done. I have brought the project report with me if you would like to see it."
 		}
 	},
@@ -35,7 +35,7 @@
 		"fields": {
 			"title": "Strengths 1",
 			"question": "What is your greatest strength? or What are your strengths?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I work in a very systematic and organized way. I understand the objective, plan my work very well, break down the tasks, set priorities, work hard following the plan and finish my work before the deadline."
 		}
 	},
@@ -45,7 +45,7 @@
 		"fields": {
 			"title": "follow-up Strengths 1",
 			"question": "That's good. But, hard and organized work is not always enough. One has to have the knowledge and work smartly too. Isn't that right?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Yes, ma'am (or sir). During the planning phase, I figure out what knowledge is needed, what I already know and what knowledge I need to acquire to complete the task. Then I quickly learn it, try it, and implement it. I keep my focus on the goal and work smartly without wasting time."
 		}
 	},
@@ -55,7 +55,7 @@
 		"fields": {
 			"title": "Reliability 1",
 			"question": "What other qualities do you have that would make you a reliable employee?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I have an extremely strong work ethic and sense of commitment. When I am working on something, I do not just want to meet the deadlines, rather I want to complete the work well ahead of schedule and spend some time in testing to ensure it is perfect the first time."
 		}
 	},
@@ -65,7 +65,7 @@
 		"fields": {
 			"title": "Weaknesses 1",
 			"question": "What is your biggest weakness? or What are your weaknesses?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I realize that I need to improve my verbal communication skill, especially English. I am taking an online course on Professional Communication Skill. Also, we have formed a group of students. We meet every weekend, hold group discussions, and help each other to improve our communication skills."
 		}
 	},
@@ -75,7 +75,7 @@
 		"fields": {
 			"title": "Self improvement 1",
 			"question": "What is this course you are taking? And what kind of topics do you discuss?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I am taking an online course called English for Professional Communication. It is a 6-week intensive course. In our discussion group, we discuss topics related to technology, economy, and sometimes social issues. For example, last week we discussed how Artificial intelligence and Robotics will change the jobs in the future."
 		}
 	},
@@ -85,7 +85,7 @@
 		"fields": {
 			"title": "Best suited candidate 1",
 			"question": "Why should we hire you? or Why do you want to work at our company? or  What makes you a better candidate than the others?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "My educational qualifications, skills, interests, and goals match very well with the requirements of this position. I have always wanted to work in the area of software development. Your company is one of the leaders in this area, one of the most innovative companies, and here I will have the best opportunity to learn and contribute to this company"
 		}
 	},
@@ -95,7 +95,7 @@
 		"fields": {
 			"title": "Company knowledge 1",
 			"question": "What do you know about our company and our innovations?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Your company has a leading PLM product with over 4,000 customers worldwide. Recently your company has announced the launch of a fully-integrated platform which will have a big advantage over the competitor's products such as ... "
 		}
 	},
@@ -105,7 +105,7 @@
 		"fields": {
 			"title": "Long-term goals 1",
 			"question": "Where do you see yourself in five years from now? or What is your long-term career goal?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Over the first few years, I would like to learn and produce as much as possible and gain experience by working on projects. In the future, I would like to develop management skills and become a team leader and then a project manager in this company. I would like to conceptualize, design and lead a team of engineers and programmers to create innovative products."
 		}
 	},
@@ -115,7 +115,7 @@
 		"fields": {
 			"title": "Reliability 2",
 			"question": "Are you sure, after gaining experience you would still be with us? What if you get a better opportunity in some other company, would you leave?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "I am sure when I work hard and perform well, I will get great opportunities in this company. As I mentioned earlier, I am very interested in the kind of work you do. I would certainly stay in this company and work loyally as long as possible."
 		}
 	},
@@ -125,7 +125,7 @@
 		"fields": {
 			"title": "Travel 1",
 			"question": "This position requires some traveling to other states and sometimes to other countries. If we send you somewhere, would you be able to go? ",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Yes, I would surely like to travel whenever needed. That way I will get to know various teams, partners, and customers. Also, I adjust to different places, language and cultures very easily."
 		}
 	},
@@ -135,7 +135,7 @@
 		"fields": {
 			"title": "Night shift 1",
 			"question": "Sometimes, you may have to work night-shifts, also on the weekends. Will you be able to do it?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Yes. I understand that in order to meet the deadlines for some projects we have to work on weekends and nightshifts too. That is absolutely fine with me."
 		}
 	},
@@ -145,7 +145,7 @@
 		"fields": {
 			"title": "Relocate",
 			"question": "Suppose we hire you. After the training, you may have to relocate to a different state. Are you willing to relocate or do you have any problem with that?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Yes. I am flexible and can easily adapt to any place. I would gladly relocate to any state wherever the company needs me."
 		}
 	},
@@ -155,7 +155,7 @@
 		"fields": {
 			"title": "Question for Interviewer 1",
 			"question": "Do you have any question for us?",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Yes. Can you please tell me what kind of employee improvement programs you have for special training, skill development, and for higher studies?"
 		}
 	},
@@ -165,7 +165,7 @@
 		"fields": {
 			"title": "Closure",
 			"question": "Yes. We have several internal and external training programs and workshops. We can tell you more about it at a  later time. Well, that is all for now. You will hear from us soon. ",
-			"lesson": "1",
+			"lesson": "14",
 			"answer": "Thank you very much for this opportunity. I look forward to hearing from you."
 		}
 	}

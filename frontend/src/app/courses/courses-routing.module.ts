@@ -10,11 +10,11 @@ const routes: Routes = [
       component: HomeComponent
    },
    {
-      path: 'course',
+      path: ':course',
       component: CourseComponent
    },
    {
-      path: 'course/lesson',
+      path: ':course/:lesson',
       component: LessonComponent
    }
 ];

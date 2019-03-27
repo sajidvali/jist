@@ -6,20 +6,19 @@
       <button mat-icon-button mat-card-avatar *ngIf="!subscribed" (click)="subscribe()">
          <mat-icon class="unsubscribed">add_circle_outline</mat-icon>
       </button>
-      <span class="cost">{{course.cost}}</span>
+      <span *ngIf="subscribed" class="progressamount">{{subscribed.lessonsCompleted}}/{{course.lessoncount}}</span>
       <mat-card-title>{{course.title}}</mat-card-title>
-      <mat-card-subtitle>{{category}}</mat-card-subtitle>
+      <mat-card-subtitle>{{course.category}}</mat-card-subtitle>
    </mat-card-header>
 
    <mat-card-content>
-      <img src="{{course.image}}" alt="{{course.title}}">
+      <img [src]="courseImage" alt="{{course.title}}">
       <div class="description">
          <p>{{course.description}}</p>
          <div class="center">
             <a *ngIf="subscribed" mat-raised-button color="accent" 
-            [routerLink]="['course']"  [state]="{course: course, category:category, subscribed:subscribed}">Go to Course</a>
-            <a *ngIf="!subscribed" mat-raised-button disabled={{!course.canpeek}}
-            [routerLink]="['course']"  [state]="{course: course, category:category, subscribed:subscribed}">Look Inside</a>
+            [routerLink]="[course.id]"  [state]="{course: course, subscribed:subscribed}">Go to Course</a>
+            <button *ngIf="!subscribed" mat-raised-button (click)="subscribe()" >Register</button>
          </div>
       </div>
    </mat-card-content>

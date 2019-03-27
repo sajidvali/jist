@@ -5,7 +5,7 @@
 		"fields": {
 			"title": "Certificate verification",
 			"question": "Can you show us your original academic and training certificates?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Sure. Here are my academic certificates and here are my internship and training certificates. I have not graduated yet, I am in the final year. Here are the provisional certificate and Grade report."
 		}
 	},
@@ -15,7 +15,7 @@
 		"fields": {
 			"title": "Background mismatch",
 			"question": "I see that your background is in Electronics and Communication engineering. Why do you want this job and not something closely related to your field?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "My broad engineering background helps me to look at projects from a wider perspective. Your company is a leader in business solutions. You are already working on integrating your traditional ERP solution with AI and ML-based business analytics. I took a few courses in computer science, did a small project on that during my training and found it very exciting to see how much we can learn from the existing data and make smart decisions. I want to learn more about it and apply it to solve real problems. I think this position will give me the right opportunity to contribute something significant to a futuristic product of your company."
 		}
 	},
@@ -25,7 +25,7 @@
 		"fields": {
 			"title": "Achievement",
 			"question": "What is your greatest achievement? Can you tell us about one accomplishment that you are really proud of? or What is the most difficult thing you have ever done?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "When I was working on my project (or at my current job, or during my internship), I hit an obstacle—our method just did not work; it produced unreasonable results. We tried many modifications, struggled for months, still the results were far from measured data. My guide and I thought we chose the wrong path and probably should abandon it. I was thinking about it day and night. One Saturday morning about 3 AM, I got an idea to solve that problem. I woke up and worked out the mathematics. I went to my lab and quickly changed our program and ran it, which produced quite reasonable results. I got very excited and refined the code and played with a few input parameters, the results were very satisfactory. On Monday morning, I showed my work to my guide, he was very happy. My project was essentially finished and we will publish our work soon. That was possibly my biggest accomplishment so far. "
 		}
 	},
@@ -35,7 +35,7 @@
 		"fields": {
 			"title": "Publication",
 			"question": "So, in which journal are you planning to publish it? ",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "In the International Journal for Computational Science and Engineering. However, first, we will submit it as a conference paper. I hope it gets accepted. It will be exciting to go to a conference and present our paper. "
 		}
 	},
@@ -45,7 +45,7 @@
 		"fields": {
 			"title": "Continuous improvement",
 			"question": "The technology is changing very fast. How do you plan to keep pace with the changes and stay productive?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Yes, technology is changing rapidly. I like the changes and am always excited to learn new technologies. I spend some time every week learning about which institutes and industries are working on what new technology. And if something looks interesting, I delve into it, learn it and see how and where I can apply it to create new products to stay ahead instead of being a passive follower or user."
 		}
 	},
@@ -55,7 +55,7 @@
 		"fields": {
 			"title": "New technology",
 			"question": "Can you give an example of some new technology you have learned recently and where it can be useful?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Yes, currently I am learning about semi-supervised learning. I am thinking that I can combine that with the expert systems in product design to increase the speed and reduce the cost of new product development."
 		}
 	},
@@ -65,7 +65,7 @@
 		"fields": {
 			"title": "Project management",
 			"question": "If after a few months you are given a small project to manage, do you think you can handle it? or Do you have any project management experience that can be used at our company?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I have tried to manage my academic project like an industry project--planning, gathering requirements, setting milestones, progress reviews, and even budgeting. I have used Microsoft Project software to help me with project management. I am confident that at your company I can learn more about project management and the tools you use in a short time and take up such responsibilities."
 		}
 	},
@@ -75,7 +75,7 @@
 		"fields": {
 			"title": "Explaining gaps",
 			"question": "You graduated last year. Can you tell us what you have been doing since then?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I had a good idea about designing a product. I wanted to finish it before taking up a job. I worked very hard and finally finished it a couple of months ago. Additionally, I took two online courses on advanced Data science and Machine learning, which will help me in my profession?"
 		}
 	},
@@ -85,7 +85,7 @@
 		"fields": {
 			"title": "Proof of claims",
 			"question": "Do you have the certificates of those courses? And where is your product going to be used? Can you show us your product or the report?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Yes. I have the certificates, here are the copies. And here is a brief description of the product. It is currently used in our college laboratory. Hopefully, many other colleges will use it too. I can give a demo if you have time."
 		}
 	},
@@ -95,7 +95,7 @@
 		"fields": {
 			"title": "Right person",
 			"question": "Why do you think you should get this job?, What makes you the best candidate for this job? or Why are you the right person for this job?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I have checked all the requirements for this position. I sincerely believe I am qualified for it. I have seen the job description and it matches very well with what I would like to do. If I am given a chance, I will give my 100% to perform and deliver for the benefit of the company and for myself. I am confident that I am the right candidate for this position and surely will not disappoint you."
 		}
 	},
@@ -105,7 +105,7 @@
 		"fields": {
 			"title": "Salary",
 			"question": "How much salary are you expecting? Or What's your salary expectations?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I am a recent graduate and money is not the biggest concern for me. I want to learn, contribute and grow in this company. So, I am just expecting whatever the standard salary for this kind of position is. "
 		}
 	},
@@ -115,7 +115,7 @@
 		"fields": {
 			"title": "Extra-curricular",
 			"question": "How do you spend your non-working hours?, What extra-curricular activities do you do?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I have started taking an evening yoga class. On the weekends, I go jogging with a few friends. Sometimes we get together and hold discussions on various issues. I volunteer at a local school to teach programming to students."
 		}
 	},
@@ -125,7 +125,7 @@
 		"fields": {
 			"title": "self-improvement",
 			"question": "Tell me one thing you want to get better at. Are you doing anything for self-improvement? ",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I realize that I can manage my time better. I am working on making myself more efficient by planning my time in half-hour slots and sticking to the plan."
 		}
 	},
@@ -135,7 +135,7 @@
 		"fields": {
 			"title": "Question for interviewer 1",
 			"question": "Well, I think we have learned quite a bit about you. Do you have any question for us?",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Yes, could you please tell me about the people in the team in which I will have to work? Are they all computer scientists, engineers, and programmers?"
 		}
 	},
@@ -145,7 +145,7 @@
 		"fields": {
 			"title": "Question for interviewer 2",
 			"question": "Most of the team members are software developers and a few systems engineers from the electrical engineering background. There are also a couple of mathematicians in the group too. Anything else? ",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "I have gone through the job description and have an overall idea about it. I would like to know a bit more about the day-to-day work I am expected to do in this position."
 		}
 	},
@@ -155,7 +155,7 @@
 		"fields": {
 			"title": "Job details",
 			"question": "Initially, most of the work you would be expected to do would be to programming, testing, documentation, etc. Later you may have to go to the clients and trouble-shoot their problems, demo new releases and train them, and so on. Anything else? ",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "That sounds very exciting. That's all I wanted to know for now. Thank you very much."
 		}
 	},
@@ -165,7 +165,7 @@
 		"fields": {
 			"title": "Ending",
 			"question": "Well, we are also finished with the interview. We will let you know about our decision early next week.",
-			"lesson": "3",
+			"lesson": "16",
 			"answer": "Thank you very much for giving me this opportunity. I look forward to hearing from you."
 		}
 	}

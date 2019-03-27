@@ -83,11 +83,11 @@ mat-card-content:hover .description {
    top:0px;
 }
 
-.cost {
+.progressamount {
    position: absolute;
    right: 10px;
    top: 10px;
 }
-.cost::before {
-   content: "₹ ";
-}
+// .cost::before {
+//    content: "₹ ";
+// }

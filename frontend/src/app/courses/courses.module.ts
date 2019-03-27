@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { CoursetileComponent } from './components/coursetile/coursetile.component';
-import { MatIconModule, MatCardModule, MatButtonModule, MatListModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatCheckboxModule } from '@angular/material';
+import { MatIconModule, MatCardModule, MatButtonModule, MatListModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatCheckboxModule, MatTableModule, MatSortModule, MatProgressBarModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { CourseComponent } from './components/course/course.component';
@@ -22,7 +22,7 @@ import { QuestionTileComponent } from './components/question-tile/question-tile.
     MatIconModule, MatCardModule, MatButtonModule, 
     MatListModule, MatPaginatorModule, 
     MatFormFieldModule, MatInputModule, MatSelectModule,
-    FormsModule, MatCheckboxModule
+    FormsModule, MatCheckboxModule, MatTableModule, MatSortModule, MatProgressBarModule
   ]
 })
 export class CoursesModule { }

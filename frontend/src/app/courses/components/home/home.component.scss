@@ -11,7 +11,7 @@ $accent: map-get($interview-app-theme, accent);
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-evenly;
    margin-bottom:50px;
 }
 

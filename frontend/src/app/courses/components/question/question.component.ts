@@ -1,16 +1,16 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { TextspeechService } from "../shared/services/textspeech.service";
-import { SpeechtotextService } from "../shared/services/speechtotext.service";
-import { SpeechNotification } from '../shared/models/speech-notification';
-import { SpeechError } from '../shared/models/speech-error';
+import { Text2speechService } from "../../services/text2speech.service";
+import { Speech2textService } from "../../services/speech2text.service";
+import { SpeechNotification } from '../../models/speech-notification';
+import { SpeechError } from '../../models/speech-error';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.scss'],
   providers: [
-    TextspeechService, 
-    SpeechtotextService
+    Text2speechService, 
+    Speech2textService
   ],
 })
 export class QuestionComponent implements OnInit{
@@ -32,9 +32,9 @@ export class QuestionComponent implements OnInit{
   languages: string[] =  ['en-US', 'en-UK', 'en-IN'];
   currentLanguage: string;
 
-  constructor(private TtsService: TextspeechService,
+  constructor(private TtsService: Text2speechService,
               private changeDetector: ChangeDetectorRef,
-              private SttService: SpeechtotextService) { }
+              private SttService: Speech2textService) { }
 
   ngOnInit() {
     this.currentLanguage = this.languages[0];

@@ -24,7 +24,7 @@
         <ng-container matColumnDef="title">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
           <td mat-cell *matCellDef="let row"> <button mat-button
-              (click)="attempt(row.question, row.attempt)">{{row.title}}</button> </td>
+              (click)="openDialog()">{{row.title}}</button> </td>
         </ng-container>
 
         <!-- Attempts Column -->

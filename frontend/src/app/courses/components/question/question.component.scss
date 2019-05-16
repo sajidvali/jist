@@ -1,0 +1,5 @@
+@import 'src/theme.scss';
+
+$primary: map-get($interview-app-theme, primary);
+$accent: map-get($interview-app-theme, accent);
+$background: map-get($interview-app-theme, background);

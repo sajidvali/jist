@@ -1,0 +1,29 @@
+<h2 mat-dialog-title> lesson_name </h2>
+<mat-dialog-content class="mat-typography">
+      <div>
+  <img src="assets/images/avatar/0_Welcome.png" class="center"><br><br>
+  <h1>{{ question_label }}</h1>
+  <button mat-raised-button (click)="askQuestion()">Ask Question</button>
+  <p>
+</div>
+<br><br>
+<div>
+  
+  <div class="center">
+    <button mat-fab (click)="startButton($event)">
+      <mat-icon *ngIf="!recognizing">mic</mat-icon>
+      <mat-icon *ngIf="recognizing">stop</mat-icon>
+    </button>
+  </div>
+  
+  <textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="15" disabled="true"></textarea>
+  
+  <mat-card *ngIf="notification" class="notification">{{notification}}</mat-card>
+  
+</div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
+ 

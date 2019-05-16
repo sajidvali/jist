@@ -9,6 +9,8 @@ import { Question } from '../../models/question';
 import { Attempt } from '../../models/attempt';
 import { Course } from '../../models/course';
 import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
+import { QuestionComponent } from '../question/question.component';
+import {MatDialog} from '@angular/material';
 
 export interface QuestionAttempt {
    title: string;
@@ -42,7 +44,7 @@ export class LessonComponent implements OnInit {
    @ViewChild(MatPaginator) paginator: MatPaginator;
    @ViewChild(MatSort) sort: MatSort;
 
-   constructor(private router: Router, private route: ActivatedRoute, private contentService: ContentService,
+   constructor(public dialog: MatDialog, private router: Router, private route: ActivatedRoute, private contentService: ContentService,
       private sanitizer: DomSanitizer) {
       const navigation = this.router.getCurrentNavigation();
       if (!navigation || !navigation.extras.state) return;
@@ -103,6 +105,16 @@ export class LessonComponent implements OnInit {
       if (this.dataSource.paginator) {
          this.dataSource.paginator.firstPage();
       }
+   }
+
+   openDialog() {
+      const dialogRef = this.dialog.open(QuestionComponent,{
+         width:"100%",
+         height:"100%"
+      });
+      dialogRef.afterClosed().subscribe(result => {
+         console.log(`Dialog result: ${result}`);
+      });
    }
 
    ngOnInit() {

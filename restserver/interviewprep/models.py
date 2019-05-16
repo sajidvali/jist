@@ -262,7 +262,8 @@ def process_attempt(sender, instance, created, **kwargs):
         lessonattempt.attempts += 1
 
         # if a fresh lesson attempt started
-        lessonattempt.lesson.attemptCount += lessonstarted
+        # TODO: double check
+        #lessonattempt.lesson.attemptCount += 1 if firstattempt else 0
 
         # check if this was first attempt of this question by this user
         if firstattempt:
@@ -272,11 +273,15 @@ def process_attempt(sender, instance, created, **kwargs):
             lessoncompleted = (lessonattempt.questions ==
                                lessonattempt.lesson.questionCount)
 
+        # find the last best score excuting this instance.
+        # if the current score is greatet than previous best add difference to our analytics
+        #TODO: below logic is incorrect. Because bestscore is the max including current inatance
         change = bestscore if instance.score > bestscore else instance.score
         scorechange = instance.score - change
 
         lessonattempt.score += scorechange
         profile.score += scorechange
+        # TODO: update above
 
         updateCourseAttempts(lessonattempt,
                              lessoncompleted, scorechange)

@@ -45,9 +45,10 @@ export class QuestionComponent implements OnInit{
 
   askQuestion(){
     console.log("Inside component");
-    this.TtsService.speak(this.question, 'en-US');
+    this.TtsService.speak(this.question);
   }
 
+  
   startButton(event) {
     if (this.recognizing) {
       this.SttService.stop();

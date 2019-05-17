@@ -1,28 +1,41 @@
-import { Injectable } from '@angular/core';
-// import Speech from 'speak-tts';
+import { Injectable, OnInit } from '@angular/core';
+import Speech from 'speak-tts';
 
 @Injectable({
   providedIn: 'root'
 })
-export class Text2speechService {
+export class Text2speechService implements OnInit {
 
-  message: any;
+  constructor(private tts: Speech) {}
 
-  constructor() {
-    this.initSynthesis();
+  ngOnInit(){
+    this.tts
+      .init({
+        volume: 0.5,
+        lang: "en-US",
+        rate: 0.9,
+        pitch: 1,
+        voice: 'Google US English Male',
+      })
+      .then(data => {
+        console.log("Speech is ready", data);
+      })
+      .catch(e => {
+        console.error("An error occured while initializing: ", e);
+      });
   }
 
-  initSynthesis(): void {
-    this.message = new SpeechSynthesisUtterance();
-    this.message.volume = 1;
-    this.message.rate = 1;
-    this.message.pitch = 0.2; 
-  }
-
-  speak(message: string, language: string): void {
-    this.message.lang = language;
-    this.message.text = message;
-    speechSynthesis.speak(this.message); 
+  speak(data) {
+    console.log(data);
+    this.tts
+      .speak({
+        text: data,
+      })
+      .then(data => {
+        console.log("TTS success! ", data);
+      })
+      .catch(e => {
+        console.error("Error occurred: ", e);
+      })
   }
 }
- 

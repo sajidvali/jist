@@ -14,6 +14,8 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { VirtualScrollerModule } from 'ngx-virtual-scroller';
 import { LoggedinHomeComponent } from './components/loggedin-home/loggedin-home.component';
 import { ShareButtonsModule } from '@ngx-share/buttons';
+import Speech from 'speak-tts';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +48,7 @@ import { ShareButtonsModule } from '@ngx-share/buttons';
     ShareButtonsModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [Speech],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

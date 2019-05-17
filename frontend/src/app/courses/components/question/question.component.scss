@@ -3,3 +3,18 @@
 $primary: map-get($interview-app-theme, primary);
 $accent: map-get($interview-app-theme, accent);
 $background: map-get($interview-app-theme, background);
+
+.full-width-dialog .mat-dialog-container {
+    max-width: 100vw !important;
+  }
+
+  table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table {
+    margin-left: 3%;
+  }
+  th {
+    text-align: center;
+  }

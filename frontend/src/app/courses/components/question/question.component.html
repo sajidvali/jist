@@ -1,29 +1,31 @@
-<h2 mat-dialog-title> lesson_name </h2>
-<mat-dialog-content class="mat-typography">
-      <div>
-  <img src="assets/images/avatar/0_Welcome.png" class="center"><br><br>
-  <h1>{{ question_label }}</h1>
-  <button mat-raised-button (click)="askQuestion()">Ask Question</button>
-  <p>
+<h2 mat-dialog-title>Lesson Name</h2>
+<mat-dialog-content >
+  <h3>Get Ready..!</h3>
+  <img src="assets/images/avatar/0_Welcome.png" width="200px" height="200px" style="padding-left:35%"><br>
+  <h1 style="text-align:center;">{{ question_label }}</h1>
+  <button mat-raised-button (click)="askQuestion()" style="margin-left:43%">Ask Question</button>
+  <div layout="row" layout-align="center center" class="ng-scope layout-align-space-around-center layout-row">
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
 </div>
-<br><br>
-<div>
-  
   <div class="center">
     <button mat-fab (click)="startButton($event)">
       <mat-icon *ngIf="!recognizing">mic</mat-icon> 
       <mat-icon *ngIf="recognizing">stop</mat-icon>
     </button>
+    <button mat-fab style="padding-left:3%">
+      <mat-icon >Evlavute</mat-icon>
+    </button>
+    <button mat-fab style="margin-left:80%">
+      <mat-icon >Show Ans</mat-icon>
+    </button>
+    <table>
+      <tr>
+        <th><textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="10" cols="200" disabled="true"></textarea></th>
+        <th><textarea matInput [value]="finalTranscript" placeholder="Answer to Display" rows="10" cols="200" disabled="true"></textarea></th>
+      </tr>
+    </table>
   </div>
-  
-  <textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="15" disabled="true"></textarea>
-  
-  <mat-card *ngIf="notification" class="notification">{{notification}}</mat-card>
-  
-</div>
-
 </mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-</mat-dialog-actions>
- 
+

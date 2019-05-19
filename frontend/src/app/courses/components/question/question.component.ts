@@ -1,8 +1,11 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, Output, EventEmitter, Inject, ElementRef, ViewChild, NgZone } from '@angular/core';
 import { Text2speechService } from "../../services/text2speech.service";
 import { Speech2textService } from "../../services/speech2text.service";
 import { SpeechNotification } from '../../models/speech-notification';
 import { SpeechError } from '../../models/speech-error';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { Question } from '../../models/question';
+import { Attempt } from '../../models/attempt';
 
 @Component({
   selector: 'app-question',
@@ -14,17 +17,16 @@ import { SpeechError } from '../../models/speech-error';
   ],
 })
 export class QuestionComponent implements OnInit{
+  @ViewChild("avatar") avatarImage:ElementRef;
 
   AvatarImages = ['jobs_full.png','jobs_mouth_wide5.png','jobs_mouth_wide5.png','jobs_mouth_narrow_o.png','jobs_mouth_wide_y.png',
 	'jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_w.png','jobs_mouth_narrow_o.png',
 	'jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_u.png','jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_wide_sh.png',
 	'jobs_mouth_wide5.png','jobs_mouth_wide_sh.png','jobs_mouth_wide_sh.png','jobs_mouth_wide_th.png','jobs_mouth_wide_f.png',
   'jobs_mouth_wide_sh.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_closed.png'];
-  question_id = 1;
-	question_label = "Algorithm definition";
-	question = "What is an algorithm in computer science? What is the use of an algorithm?";
-	question_visemes = [[7, 1, 19, 6, 15, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 6, 19, 20, 1, 21, 21, 6, 7, 19, 5, 15, 11, 1, 19, 15, 0], [7, 1, 19, 6, 15, 17, 1, 6, 7, 15, 1, 18, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]];
-  quetion_text = "An algorithm is a finite sequence of well-defined instructions to accomplish a given task, that is to transform the given input into the output. To solve any computational problem, an appropriate algorithm or the step-by-step procedure is followed to arrive at the desired solution.";
+
+  curr_question : Question;
+  curr_attempt : Attempt;
 
   finalTranscript = '';
   recognizing = false;
@@ -32,29 +34,79 @@ export class QuestionComponent implements OnInit{
   languages: string[] =  ['en-US', 'en-UK', 'en-IN'];
   currentLanguage: string;
 
+  speaking: boolean = false;
+	sentenceIndex: number = -1;
+	sentences: Array<string>;
+	speakinterval: number;
+  speakAndAnimateFlag: number = 1;
+  speechRate = 0.9;
+  variable: any;
+  imagePath: string = "~/assets/images/avatar/";
+
   constructor(private TtsService: Text2speechService,
               private changeDetector: ChangeDetectorRef,
-              private SttService: Speech2textService) { }
+              private SttService: Speech2textService,
+              private zone: NgZone,
+              public dialogRef: MatDialogRef<QuestionComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   ngOnInit() {
+    this.curr_question = this.data.question;
+    this.curr_attempt = this.data.attempt;
     this.currentLanguage = this.languages[0];
     this.SttService.initialize(this.currentLanguage);
     this.initRecognition();
     this.notification = null;
+    this.variable = this.curr_question.question;
+		this.variable.replace(".","?");
+		this.sentences = this.variable.split("? ");
   }
+
+  speakNextSentence(){
+		console.log("speakNextSentence called ", this.speakAndAnimateFlag, this.speaking, this.sentenceIndex);
+		this.speakAndAnimateFlag++;
+		if(this.speaking && this.speakAndAnimateFlag == 2) {
+			this.speakAndAnimateFlag = 0;
+			this.sentenceIndex++;
+			if(this.sentenceIndex<this.sentences.length) {
+				// this.speakOptions.text = this.sentences[this.sentenceIndex];
+				this.TtsService.speak(this.sentences[this.sentenceIndex])
+				// .then(()=>{
+        console.log("calling animate avatar"); 
+				this.animateAvatar();
+				// (err)=>{console.log(err);});
+			} else {
+				this.sentenceIndex = -1;
+				this.speaking = false;
+				this.speakAndAnimateFlag = 1;
+			}
+		}
+	}
+
+	animateAvatar(): void {
+		let i = 0;
+    this.speakinterval = window.setInterval(() => { 
+      console.log(this.imagePath + this.AvatarImages[this.curr_question.visemes[this.sentenceIndex][i]]);
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[this.curr_question.visemes[this.sentenceIndex][i]];
+      i++;
+      if (i == this.curr_question.visemes[this.sentenceIndex].length) {
+				clearInterval(this.speakinterval);
+				this.speakNextSentence();
+			}
+		}, this.speechRate*85);
+	}
 
   askQuestion(){
     console.log("Inside component");
-    this.TtsService.speak(this.question);
+    this.speaking = true;
+    this.speakNextSentence();
   }
 
-  
   startButton(event) {
     if (this.recognizing) {
       this.SttService.stop();
       return;
     }
-
     this.SttService.start(event.timeStamp);
   }
 

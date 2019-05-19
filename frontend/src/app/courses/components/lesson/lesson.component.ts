@@ -76,7 +76,7 @@ export class LessonComponent implements OnInit {
       console.log(data);
       return data;
    }
-
+ 
    getquestionattempt(q: Question): Attempt {
       let a: Attempt = null;
       if (this.attempts) a = this.attempts.find(x => x.question == q.id)
@@ -107,10 +107,14 @@ export class LessonComponent implements OnInit {
       }
    }
 
-   openDialog() {
+   openQuestionAttempt(curr_question: Question, curr_attempt: Attempt) {
       const dialogRef = this.dialog.open(QuestionComponent,{panelClass: 'full-width-dialog',
          width:"75%",
          // height:"90%"
+         data : {
+            question : curr_question,
+            attempt : curr_attempt,
+         }
       });
       dialogRef.afterClosed().subscribe(result => {
          console.log(`Dialog result: ${result}`);

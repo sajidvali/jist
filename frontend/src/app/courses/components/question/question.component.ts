@@ -42,37 +42,40 @@ export class QuestionComponent implements OnInit{
   speechRate = 0.9;
   variable: any;
   imagePath: string = "assets/images/avatar/";
+  visemes: Array<Array<number>>;
 
   constructor(private TtsService: Text2speechService,
               private changeDetector: ChangeDetectorRef,
               private SttService: Speech2textService,
               private zone: NgZone,
               public dialogRef: MatDialogRef<QuestionComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: any) {}
+              @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
     this.curr_question = this.data.question;
     this.curr_attempt = this.data.attempt;
+    this.visemes = JSON.parse(this.curr_question.visemes);
     this.currentLanguage = this.languages[0];
     this.SttService.initialize(this.currentLanguage);
     this.initRecognition();
     this.notification = null;
     this.variable = this.curr_question.question;
-		this.variable.replace(".","?");
-		this.sentences = this.variable.split("? ");
+    let re = /\./gi;
+    let result = this.variable.replace(re, "?");
+    this.sentences = result.split("? ");
   }
 
   speakNextSentence(){
-		console.log("speakNextSentence called ", this.speakAndAnimateFlag, this.speaking, this.sentenceIndex);
+    console.log("speakNextSentence called ", this.speakAndAnimateFlag, this.speaking, this.sentenceIndex);
 		this.speakAndAnimateFlag++;
 		if(this.speaking && this.speakAndAnimateFlag == 2) {
 			this.speakAndAnimateFlag = 0;
 			this.sentenceIndex++;
 			if(this.sentenceIndex<this.sentences.length) {
-				// this.speakOptions.text = this.sentences[this.sentenceIndex];
+        console.log("senttence at current index: ", this.sentenceIndex, " , sentence: ", this.sentences[this.sentenceIndex]);
 				this.TtsService.speak(this.sentences[this.sentenceIndex])
 				// .then(()=>{
-        console.log("calling animate avatar"); 
+        // console.log("calling animate avatar"); 
 				this.animateAvatar();
 				// (err)=>{console.log(err);});
 			} else {
@@ -86,14 +89,9 @@ export class QuestionComponent implements OnInit{
 	animateAvatar(): void {
 		let i = 0;
     this.speakinterval = window.setInterval(() => { 
-      // console.log(this.curr_question.visemes,this.curr_question.visemes[this.sentenceIndex],this.sentenceIndex);
-      // console.log(this.curr_question);
-      // console.log(this.imagePath + this.AvatarImages[vis[this.sentenceIndex][i]]);
-      var vis = JSON.parse(this.curr_question.visemes);
-      // console.log(vis,typeof vis,vis[0],vis[0][0]);
-			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[vis[this.sentenceIndex][i]];
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[this.visemes[this.sentenceIndex][i]];
       i++;
-      if (i == vis[this.sentenceIndex].length) {
+      if (i == this.visemes[this.sentenceIndex].length) {
 				clearInterval(this.speakinterval);
 				this.speakNextSentence();
 			}

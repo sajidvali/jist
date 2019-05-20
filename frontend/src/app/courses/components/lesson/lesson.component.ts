@@ -117,6 +117,7 @@ export class LessonComponent implements OnInit {
          }
       });
       dialogRef.afterClosed().subscribe(result => {
+         TODO : // call tts.stop and stt.stop
          console.log(`Dialog result: ${result}`);
       });
    }

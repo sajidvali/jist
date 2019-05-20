@@ -49,7 +49,9 @@ export class QuestionComponent implements OnInit{
               private zone: NgZone,
               public dialogRef: MatDialogRef<QuestionComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) {}
-
+  closeDialog() {
+    this.dialogRef.close('Pizza!');
+  }
   ngOnInit() {
     this.curr_question = this.data.question;
     this.curr_attempt = this.data.attempt;

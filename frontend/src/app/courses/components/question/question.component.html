@@ -1,24 +1,20 @@
-<h1 mat-dialog-title style="text-align:center;">{{ curr_question.title }}</h1>
-<mat-dialog-content >
-  <table>
-    <tr>
-      <th><img src="assets/images/avatar/0_Welcome.png" #avatar width="200px" height="200px"></th>
-      <th><textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="6" cols="25" disabled="true"></textarea></th>
-    </tr>
-    <tr>
-      <th><button mat-raised-button (click)="askQuestion()">Ask Question</button></th>
-      <th><button mat-fab><mat-icon >Show Ans</mat-icon></button></th>
-    </tr>
-    <tr>
-      <th>
-        <button mat-fab (click)="startButton($event)">
-          <mat-icon *ngIf="!recognizing">mic</mat-icon> 
-          <mat-icon *ngIf="recognizing">stop</mat-icon>
-        </button>
-        <button mat-fab style="padding-left:3%"><mat-icon >Evlavute</mat-icon></button>
-      </th>
-      <th><textarea matInput [value]="finalTranscript" placeholder="Answer to Display" rows="6" cols="25" disabled="true"></textarea></th>
-    </tr>
-  </table>
+<h1 mat-dialog-title style="text-align:center">{{ curr_question.title }}</h1>
+<mat-dialog-content style="background-color:rgb(225, 226, 211); text-align:center  ">
+  <div>
+    <img src="assets/images/avatar/0_Welcome.png" #avatar width="200px" height="200px">
+    <textarea matInput [value]="finalTranscript" autofocus placeholder="Speech Input Result" rows="10" cols="25" disabled="true"></textarea>
+  </div>
+  <div>
+    <button mat-raised-button style="margin:2%" (click)="askQuestion()">Ask Question</button>
+    <button mat-fab><mat-icon >Ans</mat-icon></button>
+  </div>
+  <div style="text-align:center">
+    <button mat-fab (click)="startButton($event)">
+      <mat-icon *ngIf="!recognizing">mic</mat-icon> 
+      <mat-icon *ngIf="recognizing">stop</mat-icon>
+    </button>
+    <button mat-fab style="margin:2%"><mat-icon >Evlavute</mat-icon></button>
+    <textarea matInput [value]="finalTranscript" autofocus placeholder="Answer to Display" rows="6" cols="25" disabled="true"></textarea>
+  </div>
 </mat-dialog-content>
 <mat-dialog-actions align="center"><h3> Score</h3> </mat-dialog-actions>

@@ -12,9 +12,16 @@ $background: map-get($interview-app-theme, background);
     border: 1px solid black;
     border-collapse: collapse;
   }
-  table {
-    margin-left: 3%;
+  th,td {
+    padding-left: 10%;
+    padding-right: 10%;
   }
-  th {
-    text-align: center;
+  table {
+    align-self: center;
+  }
+
+  textarea{
+    margin-top: -2px;
+    margin-bottom: -2px;
+    height: 232px;
   }

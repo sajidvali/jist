@@ -1,31 +1,24 @@
-<h2 mat-dialog-title>Lesson Name</h2>
+<h1 mat-dialog-title style="text-align:center;">{{ curr_question.title }}</h1>
 <mat-dialog-content >
-  <h3>Get Ready..!</h3>
-  <img src="assets/images/avatar/0_Welcome.png" width="200px" height="200px" style="padding-left:35%"><br>
-  <h1 style="text-align:center;">{{ question_label }}</h1>
-  <button mat-raised-button (click)="askQuestion()" #avatar style="margin-left:43%">Ask Question</button>
-  <div layout="row" layout-align="center center" class="ng-scope layout-align-space-around-center layout-row">
-  <div>one</div>
-  <div>two</div>
-  <div>three</div>
-</div>
-  <div class="center">
-    <button mat-fab (click)="startButton($event)">
-      <mat-icon *ngIf="!recognizing">mic</mat-icon> 
-      <mat-icon *ngIf="recognizing">stop</mat-icon>
-    </button>
-    <button mat-fab style="padding-left:3%">
-      <mat-icon >Evlavute</mat-icon>
-    </button>
-    <button mat-fab style="margin-left:80%">
-      <mat-icon >Show Ans</mat-icon>
-    </button>
-    <table>
-      <tr>
-        <th><textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="10" cols="200" disabled="true"></textarea></th>
-        <th><textarea matInput [value]="finalTranscript" placeholder="Answer to Display" rows="10" cols="200" disabled="true"></textarea></th>
-      </tr>
-    </table>
-  </div>
+  <table>
+    <tr>
+      <th><img src="assets/images/avatar/0_Welcome.png" #avatar width="200px" height="200px"></th>
+      <th><textarea matInput [value]="finalTranscript" placeholder="Speech Input Result" rows="6" cols="25" disabled="true"></textarea></th>
+    </tr>
+    <tr>
+      <th><button mat-raised-button (click)="askQuestion()">Ask Question</button></th>
+      <th><button mat-fab><mat-icon >Show Ans</mat-icon></button></th>
+    </tr>
+    <tr>
+      <th>
+        <button mat-fab (click)="startButton($event)">
+          <mat-icon *ngIf="!recognizing">mic</mat-icon> 
+          <mat-icon *ngIf="recognizing">stop</mat-icon>
+        </button>
+        <button mat-fab style="padding-left:3%"><mat-icon >Evlavute</mat-icon></button>
+      </th>
+      <th><textarea matInput [value]="finalTranscript" placeholder="Answer to Display" rows="6" cols="25" disabled="true"></textarea></th>
+    </tr>
+  </table>
 </mat-dialog-content>
-
+<mat-dialog-actions align="center"><h3> Score</h3> </mat-dialog-actions>

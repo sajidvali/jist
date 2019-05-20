@@ -41,7 +41,7 @@ export class QuestionComponent implements OnInit{
   speakAndAnimateFlag: number = 1;
   speechRate = 0.9;
   variable: any;
-  imagePath: string = "~/assets/images/avatar/";
+  imagePath: string = "assets/images/avatar/";
 
   constructor(private TtsService: Text2speechService,
               private changeDetector: ChangeDetectorRef,
@@ -86,10 +86,14 @@ export class QuestionComponent implements OnInit{
 	animateAvatar(): void {
 		let i = 0;
     this.speakinterval = window.setInterval(() => { 
-      console.log(this.imagePath + this.AvatarImages[this.curr_question.visemes[this.sentenceIndex][i]]);
-			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[this.curr_question.visemes[this.sentenceIndex][i]];
+      // console.log(this.curr_question.visemes,this.curr_question.visemes[this.sentenceIndex],this.sentenceIndex);
+      // console.log(this.curr_question);
+      // console.log(this.imagePath + this.AvatarImages[vis[this.sentenceIndex][i]]);
+      var vis = JSON.parse(this.curr_question.visemes);
+      // console.log(vis,typeof vis,vis[0],vis[0][0]);
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[vis[this.sentenceIndex][i]];
       i++;
-      if (i == this.curr_question.visemes[this.sentenceIndex].length) {
+      if (i == vis[this.sentenceIndex].length) {
 				clearInterval(this.speakinterval);
 				this.speakNextSentence();
 			}
